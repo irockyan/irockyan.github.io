@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="DOM相关," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -87,22 +87,34 @@
 
 
 
-<meta name="description" content="事件捕获从根节点流向目标节点
-目标阶段目标节点触发阶段
-事件冒泡目标节点回溯到根节点">
+<meta name="description" content="介绍webpack是现在比较流行的前端构建工具，集编译，压缩，打包等功能于一体（webpack）。
+ 本文将详细介绍webpack的使用
+配置详解开发与生产环境配置注意事项
+output中的path路径为绝对路径。
+
+更改记录
+output注意事项">
 <meta property="og:type" content="article">
-<meta property="og:title" content="DOM标准事件的三个阶段">
-<meta property="og:url" content="http://yoursite.com/2016/08/26/DOM标准事件的三个阶段/index.html">
+<meta property="og:title" content="webpack构建前端项目">
+<meta property="og:url" content="http://yoursite.com/2016/08/27/webpack构建前端项目/index.html">
 <meta property="og:site_name" content="小世界">
-<meta property="og:description" content="事件捕获从根节点流向目标节点
-目标阶段目标节点触发阶段
-事件冒泡目标节点回溯到根节点">
-<meta property="og:updated_time" content="2017-02-13T04:44:33.000Z">
+<meta property="og:description" content="介绍webpack是现在比较流行的前端构建工具，集编译，压缩，打包等功能于一体（webpack）。
+ 本文将详细介绍webpack的使用
+配置详解开发与生产环境配置注意事项
+output中的path路径为绝对路径。
+
+更改记录
+output注意事项">
+<meta property="og:updated_time" content="2017-02-13T06:43:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DOM标准事件的三个阶段">
-<meta name="twitter:description" content="事件捕获从根节点流向目标节点
-目标阶段目标节点触发阶段
-事件冒泡目标节点回溯到根节点">
+<meta name="twitter:title" content="webpack构建前端项目">
+<meta name="twitter:description" content="介绍webpack是现在比较流行的前端构建工具，集编译，压缩，打包等功能于一体（webpack）。
+ 本文将详细介绍webpack的使用
+配置详解开发与生产环境配置注意事项
+output中的path路径为绝对路径。
+
+更改记录
+output注意事项">
 
 
 
@@ -130,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/08/26/DOM标准事件的三个阶段/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/08/27/webpack构建前端项目/"/>
 
 
 
 
 
-  <title> DOM标准事件的三个阶段 | 小世界 </title>
+  <title> webpack构建前端项目 | 小世界 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -306,7 +318,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/26/DOM标准事件的三个阶段/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/27/webpack构建前端项目/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Zyan">
@@ -330,7 +342,7 @@
             
             
               
-                DOM标准事件的三个阶段
+                webpack构建前端项目
               
             
           </h1>
@@ -345,8 +357,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-08-26T10:12:21+08:00">
-                2016-08-26
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-08-27T14:29:06+08:00">
+                2016-08-27
               </time>
             
 
@@ -356,28 +368,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -386,8 +376,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/08/26/DOM标准事件的三个阶段/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/26/DOM标准事件的三个阶段/" itemprop="commentCount"></span>
+                <a href="/2016/08/27/webpack构建前端项目/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/27/webpack构建前端项目/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -395,7 +385,7 @@
 
           
           
-             <span id="/2016/08/26/DOM标准事件的三个阶段/" class="leancloud_visitors" data-flag-title="DOM标准事件的三个阶段">
+             <span id="/2016/08/27/webpack构建前端项目/" class="leancloud_visitors" data-flag-title="webpack构建前端项目">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -424,9 +414,15 @@
       
 
       
-        <h3 id="事件捕获"><a href="#事件捕获" class="headerlink" title="事件捕获"></a>事件捕获</h3><p>从根节点流向目标节点</p>
-<h3 id="目标阶段"><a href="#目标阶段" class="headerlink" title="目标阶段"></a>目标阶段</h3><p>目标节点触发阶段</p>
-<h3 id="事件冒泡"><a href="#事件冒泡" class="headerlink" title="事件冒泡"></a>事件冒泡</h3><p>目标节点回溯到根节点</p>
+        <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>webpack是现在比较流行的前端构建工具，集编译，压缩，打包等功能于一体（<a href="https://github.com/webpack/webpack" target="_blank" rel="external">webpack</a>）。</p>
+<p> 本文将详细介绍webpack的使用</p>
+<h2 id="配置详解"><a href="#配置详解" class="headerlink" title="配置详解"></a>配置详解</h2><h2 id="开发与生产环境配置"><a href="#开发与生产环境配置" class="headerlink" title="开发与生产环境配置"></a>开发与生产环境配置</h2><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li>output中的path路径为绝对路径。</li>
+</ul>
+<h2 id="更改记录"><a href="#更改记录" class="headerlink" title="更改记录"></a>更改记录</h2><ol>
+<li>output注意事项</li>
+<li></li>
+</ol>
 
       
     </div>
@@ -448,12 +444,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/DOM相关/" rel="tag"># DOM相关</a>
-          
-        </div>
-      
 
       
         
@@ -463,8 +453,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/08/25/MarkDown的基本使用/" rel="next" title="markdown的基本使用">
-                <i class="fa fa-chevron-left"></i> markdown的基本使用
+              <a href="/2016/08/26/DOM标准事件的三个阶段/" rel="next" title="DOM标准事件的三个阶段">
+                <i class="fa fa-chevron-left"></i> DOM标准事件的三个阶段
               </a>
             
           </div>
@@ -472,10 +462,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/08/27/webpack构建前端项目/" rel="prev" title="webpack构建前端项目">
-                webpack构建前端项目 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -501,8 +487,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/08/26/DOM标准事件的三个阶段/"
-           data-title="DOM标准事件的三个阶段" data-url="http://yoursite.com/2016/08/26/DOM标准事件的三个阶段/">
+      <div class="ds-thread" data-thread-key="2016/08/27/webpack构建前端项目/"
+           data-title="webpack构建前端项目" data-url="http://yoursite.com/2016/08/27/webpack构建前端项目/">
       </div>
     
   </div>
@@ -602,7 +588,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#事件捕获"><span class="nav-number">1.</span> <span class="nav-text">事件捕获</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目标阶段"><span class="nav-number">2.</span> <span class="nav-text">目标阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事件冒泡"><span class="nav-number">3.</span> <span class="nav-text">事件冒泡</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置详解"><span class="nav-number">2.</span> <span class="nav-text">配置详解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发与生产环境配置"><span class="nav-number">3.</span> <span class="nav-text">开发与生产环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意事项"><span class="nav-number">4.</span> <span class="nav-text">注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更改记录"><span class="nav-number">5.</span> <span class="nav-text">更改记录</span></a></li></ol></div>
             
 
           </div>
