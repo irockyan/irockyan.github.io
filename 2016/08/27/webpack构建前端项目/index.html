@@ -87,34 +87,43 @@
 
 
 
-<meta name="description" content="介绍webpack是现在比较流行的前端构建工具，集编译，压缩，打包等功能于一体（webpack）。
+<meta name="description" content="介绍webpack是现在比较流行的前端构建工具，集编译，压缩，模块加载，打包等功能于一体（webpack）。
  本文将详细介绍webpack的使用
-配置详解开发与生产环境配置注意事项
+配置与名词详解
+chunk打包完成之后的块
+entry构建模块的起点，每一个入口文件对应生成一个chunk。开发与生产环境配置注意事项
 output中的path路径为绝对路径。
 
 更改记录
-output注意事项">
+output注意事项
+entry的解释[2016,09,07]">
 <meta property="og:type" content="article">
 <meta property="og:title" content="webpack构建前端项目">
 <meta property="og:url" content="http://yoursite.com/2016/08/27/webpack构建前端项目/index.html">
 <meta property="og:site_name" content="小世界">
-<meta property="og:description" content="介绍webpack是现在比较流行的前端构建工具，集编译，压缩，打包等功能于一体（webpack）。
+<meta property="og:description" content="介绍webpack是现在比较流行的前端构建工具，集编译，压缩，模块加载，打包等功能于一体（webpack）。
  本文将详细介绍webpack的使用
-配置详解开发与生产环境配置注意事项
+配置与名词详解
+chunk打包完成之后的块
+entry构建模块的起点，每一个入口文件对应生成一个chunk。开发与生产环境配置注意事项
 output中的path路径为绝对路径。
 
 更改记录
-output注意事项">
-<meta property="og:updated_time" content="2017-02-13T06:46:09.000Z">
+output注意事项
+entry的解释[2016,09,07]">
+<meta property="og:updated_time" content="2017-02-14T02:45:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack构建前端项目">
-<meta name="twitter:description" content="介绍webpack是现在比较流行的前端构建工具，集编译，压缩，打包等功能于一体（webpack）。
+<meta name="twitter:description" content="介绍webpack是现在比较流行的前端构建工具，集编译，压缩，模块加载，打包等功能于一体（webpack）。
  本文将详细介绍webpack的使用
-配置详解开发与生产环境配置注意事项
+配置与名词详解
+chunk打包完成之后的块
+entry构建模块的起点，每一个入口文件对应生成一个chunk。开发与生产环境配置注意事项
 output中的path路径为绝对路径。
 
 更改记录
-output注意事项">
+output注意事项
+entry的解释[2016,09,07]">
 
 
 
@@ -436,14 +445,16 @@ output注意事项">
       
 
       
-        <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>webpack是现在比较流行的前端构建工具，集编译，压缩，打包等功能于一体（<a href="https://github.com/webpack/webpack" target="_blank" rel="external">webpack</a>）。</p>
+        <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>webpack是现在比较流行的前端构建工具，集编译，压缩，模块加载，打包等功能于一体（<a href="https://github.com/webpack/webpack" target="_blank" rel="external">webpack</a>）。</p>
 <p> 本文将详细介绍webpack的使用</p>
-<h2 id="配置详解"><a href="#配置详解" class="headerlink" title="配置详解"></a>配置详解</h2><h2 id="开发与生产环境配置"><a href="#开发与生产环境配置" class="headerlink" title="开发与生产环境配置"></a>开发与生产环境配置</h2><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<h2 id="配置与名词详解"><a href="#配置与名词详解" class="headerlink" title="配置与名词详解"></a>配置与名词详解</h2><ul>
+<li>chunk<br>打包完成之后的块</li>
+<li>entry<br>构建模块的起点，每一个入口文件对应生成一个chunk。<h2 id="开发与生产环境配置"><a href="#开发与生产环境配置" class="headerlink" title="开发与生产环境配置"></a>开发与生产环境配置</h2><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2></li>
 <li>output中的path路径为绝对路径。</li>
 </ul>
 <h2 id="更改记录"><a href="#更改记录" class="headerlink" title="更改记录"></a>更改记录</h2><ol>
 <li>output注意事项</li>
-<li></li>
+<li>entry的解释[2016,09,07]</li>
 </ol>
 
       
@@ -620,7 +631,7 @@ output注意事项">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置详解"><span class="nav-number">2.</span> <span class="nav-text">配置详解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发与生产环境配置"><span class="nav-number">3.</span> <span class="nav-text">开发与生产环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意事项"><span class="nav-number">4.</span> <span class="nav-text">注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更改记录"><span class="nav-number">5.</span> <span class="nav-text">更改记录</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置与名词详解"><span class="nav-number">2.</span> <span class="nav-text">配置与名词详解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发与生产环境配置"><span class="nav-number">3.</span> <span class="nav-text">开发与生产环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意事项"><span class="nav-number">4.</span> <span class="nav-text">注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更改记录"><span class="nav-number">5.</span> <span class="nav-text">更改记录</span></a></li></ol></div>
             
 
           </div>

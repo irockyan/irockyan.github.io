@@ -33,7 +33,7 @@
     <entry>
       <title><![CDATA[webpack构建前端项目]]></title>
       <url>%2F2016%2F08%2F27%2Fwebpack%E6%9E%84%E5%BB%BA%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%2F</url>
-      <content type="text"><![CDATA[介绍webpack是现在比较流行的前端构建工具，集编译，压缩，打包等功能于一体（webpack）。 本文将详细介绍webpack的使用 配置详解开发与生产环境配置注意事项 output中的path路径为绝对路径。 更改记录 output注意事项]]></content>
+      <content type="text"><![CDATA[介绍webpack是现在比较流行的前端构建工具，集编译，压缩，模块加载，打包等功能于一体（webpack）。 本文将详细介绍webpack的使用 配置与名词详解 chunk打包完成之后的块 entry构建模块的起点，每一个入口文件对应生成一个chunk。开发与生产环境配置注意事项 output中的path路径为绝对路径。 更改记录 output注意事项 entry的解释[2016,09,07]]]></content>
     </entry>
 
     
