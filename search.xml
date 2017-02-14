@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[vscode使用指南]]></title>
+      <url>%2F2016%2F09%2F09%2Fvscode%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%2F</url>
+      <content type="text"><![CDATA[简介微软在2015年4月30日Build 开发者大会上正式宣布了 Visual Studio Code 项目：一个运行于 Mac OS X、Windows和 Linux 之上的，针对于编写现代 Web 和云应用的跨平台源代码编辑器。推荐理由：免费，开源。下载地址 我的设置vsc的个性化设置我感觉还是比较方便的。进入首选项用户设置就可以进行设置。下载完成之后我首先改了对于文件修改保存的设置，默认是需要手动保存的，我改成了自动保存。然后就是默认的shell，对于win10用户我感觉可以换成ubuntu的那个shell，默认应该是和cmd在同一级目录。 插件建议 vscode-icons：这个是一个图标插件，vsc自带的插件对于各种文件的显示效果没有明显的区分。本插件比较好看，可以清楚的辨别各种文件类型。效果如图。 安装好之后在首选项里选择文件主题图标选择本插件就好。 快捷键虽然可以直接在偏好设置里查看默认的键盘快捷键和自定义快捷键，但是估计一票人不会去看。 文本编辑alt+up/down 移动单行shift+alt+up/down 向上或者下复制单行shift+alt+f 格式化文本command++/- 增大或者减小文本字体 文本选择li*10 直接写出10行alt+鼠标选择 选择行command+alt+up/down [size=0.9em]多行选择shift+up/down 选中光标前或者后一行shift+command+left/right 选中左或者右的部分shift+command+down/up 选中光标前面所有或者后面所有内容 文本跳转ctrl+a 跳到本行开始（command＋left）ctrl+e 跳到本行末尾（我自己喜欢用command＋right）command+down/up 跳到开始或者结束的位置 窗口切换command+b 切换二级菜单 命令code .在vscode中打开当前文件夹]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[npm使用技巧]]></title>
       <url>%2F2016%2F09%2F08%2Fnpm%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%2F</url>
       <content type="text"><![CDATA[前言本文主要知识来自于文蔺 npm算是前端开发中最常用的一个工具了，掌握一些技巧对于提高编程效率增加幸福感至关重要。 打开npm包的官网在开发中并不是都对每一个包都了如指掌，所以需要经常要去官网看文档npm home $package比如npm home react 打开此包的GitHub地址和上边一个命令差不太多npm repo $package 检查依赖中的过时项npm outdated这个对于我这种升级强迫症来说简直是完美。但是升级需谨慎。 删除无用的依赖项npm prune此命令可以删除node-modules中不在依赖列表中的项，对于实验某些依赖的作用或者删除年少轻狂时犯下的错有很大的作用。]]></content>
