@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[小知识合集]]></title>
+      <url>%2F2016%2F09%2F11%2F%E5%B0%8F%E7%9F%A5%E8%AF%86%E5%90%88%E9%9B%86%2F</url>
+      <content type="text"><![CDATA[高度的百分比需要继承在父元素未设置高度的情况下，子元素的高度的按百分比显示的话需要将父元素的高度一直写到确切的高度为止。123456789101112html&#123; height: 100%;&#125;body&#123; height: 100%;&#125;.father&#123; height: 100%;&#125;.child&#123; height: 100%;&#125; 宽度无此限制]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[设计类收藏]]></title>
       <url>%2F2016%2F09%2F10%2F%E8%AE%BE%E8%AE%A1%E7%B1%BB%E6%94%B6%E8%97%8F%2F</url>
       <content type="text"><![CDATA[设计更好的表单]]></content>
