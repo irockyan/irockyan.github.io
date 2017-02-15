@@ -595,6 +595,7 @@
           
             <h2 id="高度的百分比需要继承"><a href="#高度的百分比需要继承" class="headerlink" title="高度的百分比需要继承"></a>高度的百分比需要继承</h2><p>在父元素未设置高度的情况下，子元素的高度的按百分比显示的话需要将父元素的高度一直写到确切的高度为止。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">html&#123;</div><div class="line">    height: 100%;</div><div class="line">&#125;</div><div class="line">body&#123;</div><div class="line">    height: 100%;</div><div class="line">&#125;</div><div class="line">.father&#123;</div><div class="line">    height: 100%;</div><div class="line">&#125;</div><div class="line">.child&#123;</div><div class="line">    height: 100%;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>宽度无此限制</p>
+<h2 id="var的变量提升-hoist"><a href="#var的变量提升-hoist" class="headerlink" title="var的变量提升(hoist)"></a>var的变量提升(hoist)</h2><p>使用var声明的变量的变量会提升到作用域的顶部。<br>例如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">console.log(n);</div><div class="line">n = &apos;nihao&apos;</div><div class="line">console.log(n);</div><div class="line">var n;</div></pre></td></tr></table></figure></p>
 
           
         
@@ -1280,6 +1281,8 @@
 <li><p>CSRF<br>跨站请求伪造(Cross-site request forgery)</p>
 </li>
 <li><p>SQL注入</p>
+</li>
+<li><p>CSP<br>网页安全政策(Content Security Policy)</p>
 </li>
 </ul>
 
