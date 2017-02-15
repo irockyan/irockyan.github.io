@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[聊一聊CSS中的盒模型]]></title>
+      <url>%2F2016%2F09%2F13%2F%E8%81%8A%E4%B8%80%E8%81%8ACSS%E4%B8%AD%E7%9A%84%E7%9B%92%E6%A8%A1%E5%9E%8B%2F</url>
+      <content type="text"><![CDATA[前言参考链接：盒模型 box-sizing基本大家都知道盒模型的概念，我就不再多说了，主要说一下其中的box-sizing属性。 box-sizing主要用来改变盒模型对于宽度和高度的计算，在实际中我们可以根据习惯，设置为符合自己计算思路的盒模型计算法则。有俩个值：content-box和border-boxcontent-box：默认值，计算宽度和高度值为content box的高度和宽度，不包括内边距，边框，外边距。border-box：可选值，高度和宽度包括内边距和边框。 各种长度的意思 offsetWidth是一个只读属性，返回一个元素的布局宽度。一个典型的offsetWidth是测量元素的边框(borders)、水平线上的内边距(padding)、竖直方向滚动条(scroolbar)（如果存在的话）、以及CSS设置的宽度(width)的值。 clientWidth属性表示元素的内部宽度，以像素计。该属性包括内边距，但不包括垂直滚动条（如果有的话）、边框和外边距。该属性值会被四舍五入为一个整数。如果你需要一个小数值，可使用 element.getBoundingClientRect()。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[小知识合集]]></title>
       <url>%2F2016%2F09%2F11%2F%E5%B0%8F%E7%9F%A5%E8%AF%86%E5%90%88%E9%9B%86%2F</url>
       <content type="text"><![CDATA[高度的百分比需要继承在父元素未设置高度的情况下，子元素的高度的按百分比显示的话需要将父元素的高度一直写到确切的高度为止。123456789101112html&#123; height: 100%;&#125;body&#123; height: 100%;&#125;.father&#123; height: 100%;&#125;.child&#123; height: 100%;&#125; 宽度无此限制]]></content>
@@ -19,7 +26,7 @@
     <entry>
       <title><![CDATA[vscode使用指南]]></title>
       <url>%2F2016%2F09%2F09%2Fvscode%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%2F</url>
-      <content type="text"><![CDATA[简介微软在2015年4月30日Build 开发者大会上正式宣布了 Visual Studio Code 项目：一个运行于 Mac OS X、Windows和 Linux 之上的，针对于编写现代 Web 和云应用的跨平台源代码编辑器。推荐理由：免费，开源。下载地址 我的设置vsc的个性化设置我感觉还是比较方便的。进入首选项用户设置就可以进行设置。下载完成之后我首先改了对于文件修改保存的设置，默认是需要手动保存的，我改成了自动保存。然后就是默认的shell，对于win10用户我感觉可以换成ubuntu的那个shell，默认应该是和cmd在同一级目录。 插件建议 vscode-icons：这个是一个图标插件，vsc自带的插件对于各种文件的显示效果没有明显的区分。本插件比较好看，可以清楚的辨别各种文件类型。效果如图。 安装好之后在首选项里选择文件主题图标选择本插件就好。 快捷键虽然可以直接在偏好设置里查看默认的键盘快捷键和自定义快捷键，但是估计一票人不会去看。 文本编辑alt+up/down 移动单行shift+alt+up/down 向上或者下复制单行shift+alt+f 格式化文本command++/- 增大或者减小文本字体 文本选择li*10 直接写出10行alt+鼠标选择 选择行command+alt+up/down [size=0.9em]多行选择shift+up/down 选中光标前或者后一行shift+command+left/right 选中左或者右的部分shift+command+down/up 选中光标前面所有或者后面所有内容 文本跳转ctrl+a 跳到本行开始（command＋left）ctrl+e 跳到本行末尾（我自己喜欢用command＋right）command+down/up 跳到开始或者结束的位置 窗口切换command+b 切换二级菜单 命令code .在vscode中打开当前文件夹]]></content>
+      <content type="text"><![CDATA[简介微软在2015年4月30日Build 开发者大会上正式宣布了 Visual Studio Code 项目：一个运行于 Mac OS X、Windows和 Linux 之上的，针对于编写现代 Web 和云应用的跨平台源代码编辑器。推荐理由：免费，开源。下载地址 我的设置vsc的个性化设置我感觉还是比较方便的。进入首选项用户设置就可以进行设置。下载完成之后我首先改了对于文件修改保存的设置，默认是需要手动保存的，我改成了自动保存。然后就是默认的shell，对于win10用户我感觉可以换成ubuntu的那个shell，默认应该是和cmd在同一级目录。 插件建议 vscode-icons：这个是一个图标插件，vsc自带的插件对于各种文件的显示效果没有明显的区分。本插件比较好看，可以清楚的辨别各种文件类型。效果如图。 安装好之后在首选项里选择文件主题图标选择本插件就好。 Auto Rename Tag：书写HTML的时候，当更改了开始标签时，闭合标签也会自动改变。 快捷键虽然可以直接在偏好设置里查看默认的键盘快捷键和自定义快捷键，但是估计一票人不会去看。 文本编辑alt+up/down 移动单行shift+alt+up/down 向上或者下复制单行shift+alt+f 格式化文本command++/- 增大或者减小文本字体 文本选择li*10 直接写出10行alt+鼠标选择 选择行command+alt+up/down [size=0.9em]多行选择shift+up/down 选中光标前或者后一行shift+command+left/right 选中左或者右的部分shift+command+down/up 选中光标前面所有或者后面所有内容 文本跳转ctrl+a 跳到本行开始（command＋left）ctrl+e 跳到本行末尾（我自己喜欢用command＋right）command+down/up 跳到开始或者结束的位置 窗口切换command+b 切换二级菜单 命令code .在vscode中打开当前文件夹]]></content>
     </entry>
 
     
