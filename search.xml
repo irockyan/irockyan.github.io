@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[facebook新品：yarn]]></title>
+      <url>%2F2016%2F10%2F20%2Ffacebook%E6%96%B0%E5%93%81%EF%BC%9Ayarn%2F</url>
+      <content type="text"><![CDATA[介绍yarn是facebook出品的js包管理工具。用于替代npm。优势就是安全，下载速度快。 命令npm i -g yarn安装。yarn add $package作用等同于npm i --save $package]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[梳理line-height]]></title>
       <url>%2F2016%2F10%2F02%2F%E6%A2%B3%E7%90%86line-height%2F</url>
       <content type="text"><![CDATA[当没有显示声明line-height的时候]]></content>
