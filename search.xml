@@ -3,6 +3,20 @@
   
     
     <entry>
+      <title><![CDATA[16.10.21]]></title>
+      <url>%2F2017%2F02%2F17%2F16-10-21%2F</url>
+      <content type="text"><![CDATA[异常并不会阻碍代码的执行，只是抛出错误信息。 异常要用Error的对象而不要自定义对象，因为只有Err的对象才能获取到上下文。 我们可以为任意的对象添加属性，包括内建对象。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[必备知识收藏]]></title>
+      <url>%2F2016%2F10%2F22%2F%E5%BF%85%E5%A4%87%E7%9F%A5%E8%AF%86%E6%94%B6%E8%97%8F%2F</url>
+      <content type="text"><![CDATA[语义化版本]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[facebook新品：yarn]]></title>
       <url>%2F2016%2F10%2F20%2Ffacebook%E6%96%B0%E5%93%81%EF%BC%9Ayarn%2F</url>
       <content type="text"><![CDATA[介绍yarn是facebook出品的js包管理工具。用于替代npm。优势就是安全，下载速度快。 命令npm i -g yarn安装。yarn add $package作用等同于npm i --save $package]]></content>
