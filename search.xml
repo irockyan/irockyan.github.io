@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[记不住的jsAPI]]></title>
+      <url>%2F2016%2F11%2F01%2F%E8%AE%B0%E4%B8%8D%E4%BD%8F%E7%9A%84jsAPI%2F</url>
+      <content type="text"><![CDATA[将字符串分割成数组 1234function* split(string)&#123; yield* string&#125;console.log([...split(&apos;nihao&apos;)]);]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[flex布局]]></title>
       <url>%2F2016%2F10%2F27%2Fflex%E5%B8%83%E5%B1%80%2F</url>
       <content type="text"><![CDATA[详细注意设为Flex布局以后，子元素的float、clear和vertical-align属性将失效]]></content>
