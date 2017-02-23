@@ -3,6 +3,20 @@
   
     
     <entry>
+      <title><![CDATA[面试题]]></title>
+      <url>%2F2016%2F11%2F05%2F%E9%9D%A2%E8%AF%95%E9%A2%98%2F</url>
+      <content type="text"><![CDATA[相关引用你有必要知道的 25 个 JavaScript 面试题 HTMLCSSJS 使用 typeof bar === “object” 判断 bar 是不是一个对象有神马潜在的弊端？如何避免这种弊端？typeof为操作符，返回判断的参数类型。但是并不是特别精确，除了五种基本数据类型外，都会返回object精确判断类型可以使用Object.prototype.toString.call(obj)空字符串与空数组判定为true。 下面的代码会在 console 输出神马？为什么？123456(function()&#123; var a = b = 3;&#125;)();console.log(&quot;a defined? &quot; + (typeof a !== &apos;undefined&apos;)); console.log(&quot;b defined? &quot; + (typeof b !== &apos;undefined&apos;)); 在js中如果没有被var修饰的话是全局变量。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[字体相关]]></title>
+      <url>%2F2016%2F11%2F04%2F%E5%AD%97%E4%BD%93%E7%9B%B8%E5%85%B3%2F</url>
+      <content type="text"><![CDATA[font-size属性值有100-900,normal、bold、bolder、lighter。normal == 400 bold == 700bolder、lighter表示其字重值是基于从其父元素继承而来的字重计算所得的，与normal、bold所代表的字重并无关系。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Electron]]></title>
       <url>%2F2016%2F11%2F03%2FElectron%2F</url>
       <content type="text"><![CDATA[前言如果你只会JS，还想写一个GUI的话，相信你会喜欢这个技术。]]></content>
