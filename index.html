@@ -427,10 +427,28 @@
             <h2 id="相关引用"><a href="#相关引用" class="headerlink" title="相关引用"></a>相关引用</h2><p><a href="https://github.com/dwqs/blog/issues/17" target="_blank" rel="external">你有必要知道的 25 个 JavaScript 面试题</a></p>
 <h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><h2 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h2><ol>
 <li>使用 typeof bar === “object” 判断 bar 是不是一个对象有神马潜在的弊端？如何避免这种弊端？<br>typeof为操作符，返回判断的参数类型。但是并不是特别精确，除了五种基本数据类型外，都会返回object<br>精确判断类型可以使用<code>Object.prototype.toString.call(obj)</code><br>空字符串与空数组判定为true。</li>
-<li>下面的代码会在 console 输出神马？为什么？<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">(function()&#123;</div><div class="line">  var a = b = 3;</div><div class="line">&#125;)();</div><div class="line"></div><div class="line">console.log(&quot;a defined? &quot; + (typeof a !== &apos;undefined&apos;));   </div><div class="line">console.log(&quot;b defined? &quot; + (typeof b !== &apos;undefined&apos;));</div></pre></td></tr></table></figure>
+<li><p>下面的代码会在 console 输出神马？为什么？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">(function()&#123;</div><div class="line">  var a = b = 3;</div><div class="line">&#125;)();</div><div class="line"></div><div class="line">console.log(&quot;a defined? &quot; + (typeof a !== &apos;undefined&apos;));   </div><div class="line">console.log(&quot;b defined? &quot; + (typeof b !== &apos;undefined&apos;));</div></pre></td></tr></table></figure>
+<p> 在js中如果没有被var修饰的话是全局变量。</p>
+</li>
+<li><p>下面的代码会在 console 输出神马？为什么？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var myObject = &#123;</div><div class="line">    foo: &quot;bar&quot;,</div><div class="line">    func: function() &#123;</div><div class="line">        var self = this;</div><div class="line">        console.log(&quot;outer func:  this.foo = &quot; + this.foo);</div><div class="line">        console.log(&quot;outer func:  self.foo = &quot; + self.foo);</div><div class="line">        (function() &#123;</div><div class="line">            console.log(&quot;inner func:  this.foo = &quot; + this.foo);</div><div class="line">            console.log(&quot;inner func:  self.foo = &quot; + self.foo);</div><div class="line">        &#125;());</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line">myObject.func();</div></pre></td></tr></table></figure>
+<p> 在ES6之前，js中只有函数作用域。</p>
+</li>
+<li><p>将 JavaScript 代码包含在一个函数块中有神马意思呢？为什么要这么做？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">for(var i = 0; i &lt; 5; i++) &#123;</div><div class="line">    setTimeout(function() &#123;</div><div class="line">        console.log(i);  </div><div class="line">    &#125;, 1000);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p> 这里说一下setTimeout()的执行时机，会在同步代码执行完毕之后才会执行。</p>
+</li>
+<li>关于末尾引号的问题。<br>return,continue,break等语句如果单独在一行，解释器会在末尾自动添加引号。</li>
+<li>神马是 NaN，它的类型是神马？怎么测试一个值是否等于 NaN?<br><code>Number.isNan()</code><br>会隐式的进行类型转换。</li>
+<li><p>解释一下下面代码的输出</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">console.log(0.1 + 0.2);   //0.30000000000000004</div><div class="line">console.log(0.1 + 0.2 == 0.3);  //false</div></pre></td></tr></table></figure>
+</li>
+<li><p>写一个少于 80 字符的函数，判断一个字符串是不是回文字符串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function isPalindrome(str) &#123;</div><div class="line">    str = str.replace(/\W/g, &apos;&apos;).toLowerCase();</div><div class="line">    return (str == str.split(&apos;&apos;).reverse().join(&apos;&apos;));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>在js中如果没有被var修饰的话是全局变量。</p>
+<p>解释一下回文字符串。就是一个字符串，从左到右读和从右到左读是完全一样的。</p>
 
           
         
