@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[webpack构建前端项目]]></title>
       <url>%2F2017%2F03%2F01%2Fwebpack%E6%9E%84%E5%BB%BA%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%2F</url>
-      <content type="text"><![CDATA[介绍webpack是现在比较流行的前端构建工具，集编译，压缩，模块加载，打包等功能于一体（webpack）。 本文将详细介绍webpack的使用 配置与名词详解 chunk打包完成之后的块 entry构建模块的起点，每一个入口文件对应生成一个chunk。 devtool开发工具 开发与生产环境配置常用命令webpack --progress --watch开启监控模式 注意事项 output中的path路径为绝对路径。 exclude中的路径也为绝对路径。]]></content>
+      <content type="text"><![CDATA[介绍webpack是现在比较流行的前端构建工具，集编译，压缩，模块加载，打包等功能于一体（webpack）。 本文将详细介绍webpack的使用 配置与名词详解 chunk打包完成之后的块 entry构建模块的起点，每一个入口文件对应生成一个chunk。 devtool开发工具 开发与生产环境配置常用命令 webpack --progress --watch 开启监控模式 注意事项 output中的path路径为绝对路径。 exclude中的路径也为绝对路径。]]></content>
     </entry>
 
     
