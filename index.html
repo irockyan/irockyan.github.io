@@ -938,7 +938,7 @@
           
             <h2 id="相关引用"><a href="#相关引用" class="headerlink" title="相关引用"></a>相关引用</h2><p><a href="https://github.com/dwqs/blog/issues/17" target="_blank" rel="external">你有必要知道的 25 个 JavaScript 面试题</a></p>
 <h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><h2 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h2><ol>
-<li>使用 typeof bar === “object” 判断 bar 是不是一个对象有神马潜在的弊端？如何避免这种弊端？<br>typeof为操作符，返回判断的参数类型。但是并不是特别精确，除了五种基本数据类型外，都会返回object<br>精确判断类型可以使用<code>Object.prototype.toString.call(obj)</code><br>空字符串与空数组判定为true。</li>
+<li>使用 typeof bar === “object” 判断 bar 是不是一个对象有神马潜在的弊端？如何避免这种弊端？<br>typeof为操作符，返回判断的参数类型。但是并不是特别精确，除了五种基本数据类型外，都会返回object<br>精确判断类型可以使用<code>Object.prototype.toString.call(obj)</code><br>空字符串与空数组判定为true。<br><code>a instanceof Array</code>  可以判断是否是数组。<br><code>Array.isArray()</code> ES5中新增的方法。</li>
 <li><p>下面的代码会在 console 输出神马？为什么？</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">(function()&#123;</div><div class="line">  var a = b = 3;</div><div class="line">&#125;)();</div><div class="line"></div><div class="line">console.log(&quot;a defined? &quot; + (typeof a !== &apos;undefined&apos;));   </div><div class="line">console.log(&quot;b defined? &quot; + (typeof b !== &apos;undefined&apos;));</div></pre></td></tr></table></figure>
 <p> 在js中如果没有被var修饰的话是全局变量。</p>
