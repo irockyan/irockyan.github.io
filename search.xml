@@ -3,6 +3,20 @@
   
     
     <entry>
+      <title><![CDATA[浏览器渲染流程]]></title>
+      <url>%2F2017%2F03%2F02%2F%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E6%B5%81%E7%A8%8B%2F</url>
+      <content type="text"><![CDATA[前言浏览器渲染大概分为五个流程，懂得了渲染流程，才能对页面进行更好的优化。下面分条讲述。 DOM浏览器在解析HTML时，会以递增的方式为HTML标记生成一种名为文档对象模型（DOM）的树状模型，该模型描述了网页中包含的内容。 CSSDOM浏览器收到所有CSS后，会对其中包含的标记和和类生成一种名为CSS对象模型的树状模型，并将样式信息附加在树的节点上。这个树描述了网页中所包含内容需要应用的样式。在CSSDOM构造完成之前，客户端上不会显示任何信息。 Render Tree通过将DOM与CSSOM结合在一起，浏览器可以构造出呈现树，其中包含了页面内容以及所要应用的样式信息。 Layout布局这一步中需要计算网页内容在屏幕上的实际位置和大小。 Paint最后一步将使用布局信息在屏幕上绘制像素。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[影响web应用程序页面加载速度的因素]]></title>
+      <url>%2F2017%2F03%2F02%2F%E5%BD%B1%E5%93%8Dweb%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E7%9A%84%E5%9B%A0%E7%B4%A0%2F</url>
+      <content type="text"><![CDATA[后端处理（Backend）网站服务器需要花时间从数据库载入数据并生成网页。 网络延迟（Network latency）每个请求需要花时间从客户端抵达服务器并再次返回客户端（请求延迟）。考虑到完整加载一个网站平均需要发出超过100个请求，延迟问题变得更严峻了。 前端处理（Frontend）前端设备渲染网页也需要时间。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[webpack构建前端项目]]></title>
       <url>%2F2017%2F03%2F01%2Fwebpack%E6%9E%84%E5%BB%BA%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%2F</url>
       <content type="text"><![CDATA[介绍webpack是现在比较流行的前端构建工具，集编译，压缩，模块加载，打包等功能于一体（webpack）。 本文将详细介绍webpack的使用 配置与名词详解 chunk打包完成之后的块 entry构建模块的起点，每一个入口文件对应生成一个chunk。 devtool开发工具 开发与生产环境配置常用命令 webpack --progress --watch 开启监控模式 注意事项 output中的path路径为绝对路径。 exclude中的路径也为绝对路径。]]></content>

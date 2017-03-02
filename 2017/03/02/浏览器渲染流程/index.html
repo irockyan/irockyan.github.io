@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="散乱," />
+  <meta name="keywords" content="浏览器," />
 
 
 
@@ -87,22 +87,22 @@
 
 
 
-<meta name="description" content="异常并不会阻碍代码的执行，只是抛出错误信息。
-异常要用Error的对象而不要自定义对象，因为只有Err的对象才能获取到上下文。
-我们可以为任意的对象添加属性，包括内建对象。">
+<meta name="description" content="前言浏览器渲染大概分为五个流程，懂得了渲染流程，才能对页面进行更好的优化。下面分条讲述。
+DOM浏览器在解析HTML时，会以递增的方式为HTML标记生成一种名为文档对象模型（DOM）的树状模型，该模型描述了网页中包含的内容。
+CSSDOM浏览器收到所有CSS后，会对其中包含的标记和和类生成一种名为CSS对象模型的树状模型，并将样式信息附加在树的节点上。这个树描述了网页中所包含内容需要应用的样式。在">
 <meta property="og:type" content="article">
-<meta property="og:title" content="16.10.21">
-<meta property="og:url" content="http://yoursite.com/2016/10/21/16-10-21/index.html">
+<meta property="og:title" content="浏览器渲染流程">
+<meta property="og:url" content="http://yoursite.com/2017/03/02/浏览器渲染流程/index.html">
 <meta property="og:site_name" content="小世界">
-<meta property="og:description" content="异常并不会阻碍代码的执行，只是抛出错误信息。
-异常要用Error的对象而不要自定义对象，因为只有Err的对象才能获取到上下文。
-我们可以为任意的对象添加属性，包括内建对象。">
-<meta property="og:updated_time" content="2017-02-17T02:44:47.000Z">
+<meta property="og:description" content="前言浏览器渲染大概分为五个流程，懂得了渲染流程，才能对页面进行更好的优化。下面分条讲述。
+DOM浏览器在解析HTML时，会以递增的方式为HTML标记生成一种名为文档对象模型（DOM）的树状模型，该模型描述了网页中包含的内容。
+CSSDOM浏览器收到所有CSS后，会对其中包含的标记和和类生成一种名为CSS对象模型的树状模型，并将样式信息附加在树的节点上。这个树描述了网页中所包含内容需要应用的样式。在">
+<meta property="og:updated_time" content="2017-03-02T03:33:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="16.10.21">
-<meta name="twitter:description" content="异常并不会阻碍代码的执行，只是抛出错误信息。
-异常要用Error的对象而不要自定义对象，因为只有Err的对象才能获取到上下文。
-我们可以为任意的对象添加属性，包括内建对象。">
+<meta name="twitter:title" content="浏览器渲染流程">
+<meta name="twitter:description" content="前言浏览器渲染大概分为五个流程，懂得了渲染流程，才能对页面进行更好的优化。下面分条讲述。
+DOM浏览器在解析HTML时，会以递增的方式为HTML标记生成一种名为文档对象模型（DOM）的树状模型，该模型描述了网页中包含的内容。
+CSSDOM浏览器收到所有CSS后，会对其中包含的标记和和类生成一种名为CSS对象模型的树状模型，并将样式信息附加在树的节点上。这个树描述了网页中所包含内容需要应用的样式。在">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/10/21/16-10-21/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/02/浏览器渲染流程/"/>
 
 
 
 
 
-  <title> 16.10.21 | 小世界 </title>
+  <title> 浏览器渲染流程 | 小世界 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -306,7 +306,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/10/21/16-10-21/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/02/浏览器渲染流程/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Zyan">
@@ -330,7 +330,7 @@
             
             
               
-                16.10.21
+                浏览器渲染流程
               
             
           </h1>
@@ -345,8 +345,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-21T10:24:53+08:00">
-                2016-10-21
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-02T11:26:14+08:00">
+                2017-03-02
               </time>
             
 
@@ -368,8 +368,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/日记/" itemprop="url" rel="index">
-                    <span itemprop="name">日记</span>
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
                   </a>
                 </span>
 
@@ -386,8 +386,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/10/21/16-10-21/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/21/16-10-21/" itemprop="commentCount"></span>
+                <a href="/2017/03/02/浏览器渲染流程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/02/浏览器渲染流程/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -395,7 +395,7 @@
 
           
           
-             <span id="/2016/10/21/16-10-21/" class="leancloud_visitors" data-flag-title="16.10.21">
+             <span id="/2017/03/02/浏览器渲染流程/" class="leancloud_visitors" data-flag-title="浏览器渲染流程">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -424,11 +424,12 @@
       
 
       
-        <ul>
-<li>异常并不会阻碍代码的执行，只是抛出错误信息。</li>
-<li>异常要用Error的对象而不要自定义对象，因为只有Err的对象才能获取到上下文。</li>
-<li>我们可以为任意的对象添加属性，包括内建对象。</li>
-</ul>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>浏览器渲染大概分为五个流程，懂得了渲染流程，才能对页面进行更好的优化。下面分条讲述。</p>
+<h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><p>浏览器在解析HTML时，会以递增的方式为HTML标记生成一种名为文档对象模型（DOM）的树状模型，该模型描述了网页中包含的内容。</p>
+<h2 id="CSSDOM"><a href="#CSSDOM" class="headerlink" title="CSSDOM"></a>CSSDOM</h2><p>浏览器收到所有CSS后，会对其中包含的标记和和类生成一种名为CSS对象模型的树状模型，并将样式信息附加在树的节点上。这个树描述了网页中所包含内容需要应用的样式。<br>在CSSDOM构造完成之前，客户端上不会显示任何信息。</p>
+<h2 id="Render-Tree"><a href="#Render-Tree" class="headerlink" title="Render Tree"></a>Render Tree</h2><p>通过将DOM与CSSOM结合在一起，浏览器可以构造出呈现树，其中包含了页面内容以及所要应用的样式信息。</p>
+<h2 id="Layout"><a href="#Layout" class="headerlink" title="Layout"></a>Layout</h2><p>布局这一步中需要计算网页内容在屏幕上的实际位置和大小。</p>
+<h2 id="Paint"><a href="#Paint" class="headerlink" title="Paint"></a>Paint</h2><p>最后一步将使用布局信息在屏幕上绘制像素。</p>
 
       
     </div>
@@ -452,7 +453,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/散乱/" rel="tag"># 散乱</a>
+            <a href="/tags/浏览器/" rel="tag"># 浏览器</a>
           
         </div>
       
@@ -465,8 +466,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/20/facebook新品：yarn/" rel="next" title="facebook新品：yarn">
-                <i class="fa fa-chevron-left"></i> facebook新品：yarn
+              <a href="/2017/03/02/影响web应用程序页面加载速度的因素/" rel="next" title="影响web应用程序页面加载速度的因素">
+                <i class="fa fa-chevron-left"></i> 影响web应用程序页面加载速度的因素
               </a>
             
           </div>
@@ -474,10 +475,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/22/必备知识收藏/" rel="prev" title="必备知识收藏">
-                必备知识收藏 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -503,8 +500,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/10/21/16-10-21/"
-           data-title="16.10.21" data-url="http://yoursite.com/2016/10/21/16-10-21/">
+      <div class="ds-thread" data-thread-key="2017/03/02/浏览器渲染流程/"
+           data-title="浏览器渲染流程" data-url="http://yoursite.com/2017/03/02/浏览器渲染流程/">
       </div>
     
   </div>
@@ -528,8 +525,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -585,6 +591,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM"><span class="nav-number">2.</span> <span class="nav-text">DOM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSSDOM"><span class="nav-number">3.</span> <span class="nav-text">CSSDOM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Render-Tree"><span class="nav-number">4.</span> <span class="nav-text">Render Tree</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Layout"><span class="nav-number">5.</span> <span class="nav-text">Layout</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Paint"><span class="nav-number">6.</span> <span class="nav-text">Paint</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
