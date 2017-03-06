@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[即将到来的邮件设计革命]]></title>
+      <url>%2F2017%2F03%2F04%2F%E5%8D%B3%E5%B0%86%E5%88%B0%E6%9D%A5%E7%9A%84%E9%82%AE%E4%BB%B6%E8%AE%BE%E8%AE%A1%E9%9D%A9%E5%91%BD%2F</url>
+      <content type="text"><![CDATA[翻译自The Coming Revolution in Email Design Email, the web’s much maligned little cousin, is in the midst of a revolution—one that will change not only how designers and developers build HTML email campaigns, but also the way in which subscribers interact with those campaigns.邮件，web的饱受诟病的小表弟，正处在变革之中。这不仅将改变设计者和开发者创建HTML邮件的方式，同时也会改变用户与之交互的方式。Despite the slowness of email client vendors to update their rendering engines, email designers are developing new ways of bringing commonplace techniques on the web to the inbox. Effects like animation and interactivity are increasingly used by developers to pull off campaigns once thought impossible. And, for anyone coming from the world of the web, there are more tools, templates, and frameworks than ever to make that transition as smooth as possible. For seasoned email developers, these tools can decrease email production times and increase the reliability and efficacy of email campaigns.尽管，邮件客户端的提供商对于更新他们现有的设计非常缓慢，邮件设计者正在设计新的方法来为收件箱带来一些老生常谈的技巧。像动画和交互一旦想法可行就会被越来越多的开发者从规范中移除。同时，对于来自于web世界的任何一个人来说，都有越来越多的工具，模版，和框架来使转场变得越来越平滑。对于经验丰富的开发者来说，这些工具能够减少生产邮件的时间和增加邮件这种通信模式的可靠性和影响。Perhaps more importantly, the email industry itself is in a state of reinvention. For the first time, email client vendors—traditionally hesitant to update or change their rendering engines—are listening to the concerns of email professionals. While progress is likely to be slow, there is finally hope for improved support for HTML and CSS in the inbox.]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[浏览器渲染流程]]></title>
       <url>%2F2017%2F03%2F02%2F%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E6%B5%81%E7%A8%8B%2F</url>
       <content type="text"><![CDATA[前言浏览器渲染大概分为五个流程，懂得了渲染流程，才能对页面进行更好的优化。下面分条讲述。 DOM浏览器在解析HTML时，会以递增的方式为HTML标记生成一种名为文档对象模型（DOM）的树状模型，该模型描述了网页中包含的内容。 CSSDOM浏览器收到所有CSS后，会对其中包含的标记和和类生成一种名为CSS对象模型的树状模型，并将样式信息附加在树的节点上。这个树描述了网页中所包含内容需要应用的样式。在CSSDOM构造完成之前，客户端上不会显示任何信息。 Render Tree通过将DOM与CSSOM结合在一起，浏览器可以构造出呈现树，其中包含了页面内容以及所要应用的样式信息。 Layout布局这一步中需要计算网页内容在屏幕上的实际位置和大小。 Paint最后一步将使用布局信息在屏幕上绘制像素。]]></content>
