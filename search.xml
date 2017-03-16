@@ -12,7 +12,7 @@
     <entry>
       <title><![CDATA[BootStrap使用]]></title>
       <url>%2F2017%2F03%2F16%2FBootStrap%E4%BD%BF%E7%94%A8%2F</url>
-      <content type="text"><![CDATA[类名.container 类用于固定宽度并支持响应式布局的容器。.container-fluid 类用于 100% 宽度，占据全部视口（viewport）的容器。.img-responsive 类可以让图片支持响应式布局。其实质是为图片设置了 max-width: 100%;、 height: auto; 和 display: block; 属性，从而让图片在其父元素中更好的缩放。text-center 文本居中btn 按钮，长度与文本长度一样。btn btn-block 你的按钮将会伸展并填满页面整个水平空间，任何在它之下的元素都会跟着浮动至该区块的下一行。btn btn-block btn-primary 蓝色的块级按钮。btn btn-block btn-info 浅蓝色的块级按钮。btn btn-block btn-danger 按钮危险text-danger 文字危险颜色]]></content>
+      <content type="text"><![CDATA[类名.container 类用于固定宽度并支持响应式布局的容器。.container-fluid 类用于 100% 宽度，占据全部视口（viewport）的容器。.img-responsive 类可以让图片支持响应式布局。其实质是为图片设置了 max-width: 100%;、 height: auto; 和 display: block; 属性，从而让图片在其父元素中更好的缩放。text-center 文本居中btn 按钮，长度与文本长度一样。btn btn-block 你的按钮将会伸展并填满页面整个水平空间，任何在它之下的元素都会跟着浮动至该区块的下一行。btn btn-block btn-primary 蓝色的块级按钮。btn btn-block btn-info 浅蓝色的块级按钮。btn btn-block btn-danger 按钮危险text-danger 文字危险颜色fa fa-thumbs-up 字体图标 点赞]]></content>
     </entry>
 
     
