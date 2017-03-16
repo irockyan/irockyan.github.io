@@ -3,6 +3,20 @@
   
     
     <entry>
+      <title><![CDATA[BootStrap使用]]></title>
+      <url>%2F2017%2F03%2F16%2FBootStrap%E4%BD%BF%E7%94%A8%2F</url>
+      <content type="text"><![CDATA[类名.container 类用于固定宽度并支持响应式布局的容器。.container-fluid 类用于 100% 宽度，占据全部视口（viewport）的容器。.img-responsive 类可以让图片支持响应式布局。其实质是为图片设置了 max-width: 100%;、 height: auto; 和 display: block; 属性，从而让图片在其父元素中更好的缩放。text-center 文本居中btn 按钮，长度与文本长度一样。btn btn-block 你的按钮将会伸展并填满页面整个水平空间，任何在它之下的元素都会跟着浮动至该区块的下一行。btn btn-block btn-primary 蓝色的块级按钮。btn btn-block btn-info 浅蓝色的块级按钮。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[自己实现响应式网格（栅格化）布局]]></title>
+      <url>%2F2017%2F03%2F14%2F%E8%87%AA%E5%B7%B1%E5%AE%9E%E7%8E%B0%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BD%91%E6%A0%BC%EF%BC%88%E6%A0%85%E6%A0%BC%E5%8C%96%EF%BC%89%E5%B8%83%E5%B1%80%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[常见排序算法]]></title>
       <url>%2F2017%2F03%2F10%2F%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%2F</url>
       <content type="text"><![CDATA[插入排序123456789101112131415var array = [];for(let i=0; i&lt;10; i++)&#123; array.push(Math.floor(Math.random()*10+1));&#125;console.log(array);for(let i=1; i&lt;array.length; i++)&#123; for(let j=0; j&lt;i; j++)&#123; if(array[i] &lt; array[j])&#123; var temp = array[i]; array[i] = array[j]; array[j] = temp; &#125; &#125;&#125;console.log(array); 冒泡排序快速排序二分归并排序]]></content>
