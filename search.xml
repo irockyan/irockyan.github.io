@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[正则表达式]]></title>
+      <url>%2F2017%2F03%2F16%2F%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%2F</url>
+      <content type="text"><![CDATA[元字符() 在正则表达式中可以被用作是一个记忆设备。这一部分正则所匹配的字符将会被记住，在后面可以被利用* 前边一项出现了一个或者多个,等价于 {0,}。+ 匹配前面一个表达式1次或者多次。等价于 {1,}。? 匹配前面一个表达式0次或者1次。等价于 {0,1}。\ 转义字符^ 匹配输入的开始。如果多行标志被设置为true，那么也匹配换行符后紧跟的位置。$ 匹配输入的结束。如果多行标示被设置为true，那么也匹配换行符前的位置。\b 匹配一个词的边界。一个词的边界就是一个词不被另外一个词跟随的位置或者不是另一个词汇字符前边的位置。注意，一个匹配的词的边界并不包含在匹配的内容中。换句话说，一个匹配的词的边界的内容的长度是0。（不要和[\b]混淆了）\w 匹配一个单字字符（字母、数字或者下划线)。等价于[A-Za-z0-9_]。\d 匹配一个数字，等价于[0-9]。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[BootStrap使用]]></title>
       <url>%2F2017%2F03%2F16%2FBootStrap%E4%BD%BF%E7%94%A8%2F</url>
       <content type="text"><![CDATA[类名.container 类用于固定宽度并支持响应式布局的容器。.container-fluid 类用于 100% 宽度，占据全部视口（viewport）的容器。.img-responsive 类可以让图片支持响应式布局。其实质是为图片设置了 max-width: 100%;、 height: auto; 和 display: block; 属性，从而让图片在其父元素中更好的缩放。text-center 文本居中btn 按钮，长度与文本长度一样。btn btn-block 你的按钮将会伸展并填满页面整个水平空间，任何在它之下的元素都会跟着浮动至该区块的下一行。btn btn-block btn-primary 蓝色的块级按钮。btn btn-block btn-info 浅蓝色的块级按钮。]]></content>
