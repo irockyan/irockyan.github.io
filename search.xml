@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Animate.css]]></title>
+      <url>%2F2017%2F03%2F17%2FAnimate-css%2F</url>
+      <content type="text"><![CDATA[介绍是一个CSS3 动画库，它预设了抖动（shake）、闪烁（flash）、弹跳（bounce）、翻转（flip）、旋转（rotateIn/rotateOut）、淡入淡出（fadeIn/fadeOut）等多达 60 多种动画效果，几乎包含了所有常见的动画效果。 常用属性.animated bounce 动画 回弹效果.animated shake 动画 抖动animated fadeOut 淡出animated hinge 悬挂到左侧，然后消失]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[正则表达式]]></title>
       <url>%2F2017%2F03%2F16%2F%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%2F</url>
       <content type="text"><![CDATA[元字符() 在正则表达式中可以被用作是一个记忆设备。这一部分正则所匹配的字符将会被记住，在后面可以被利用\1 可以引用括号中的内容。* 前边一项出现了一个或者多个,等价于 {0,}。+ 匹配前面一个表达式1次或者多次。等价于 {1,}。? 匹配前面一个表达式0次或者1次。等价于 {0,1}。\ 转义字符^ 匹配输入的开始。如果多行标志被设置为true，那么也匹配换行符后紧跟的位置。$ 匹配输入的结束。如果多行标示被设置为true，那么也匹配换行符前的位置。\b 匹配一个词的边界。一个词的边界就是一个词不被另外一个词跟随的位置或者不是另一个词汇字符前边的位置。注意，一个匹配的词的边界并不包含在匹配的内容中。换句话说，一个匹配的词的边界的内容的长度是0。（不要和[\b]混淆了）\w 匹配一个单字字符（字母、数字或者下划线)。等价于[A-Za-z0-9_]。\d 匹配一个数字，等价于[0-9]。]]></content>
@@ -12,7 +19,7 @@
     <entry>
       <title><![CDATA[BootStrap使用]]></title>
       <url>%2F2017%2F03%2F16%2FBootStrap%E4%BD%BF%E7%94%A8%2F</url>
-      <content type="text"><![CDATA[类名.container 类用于固定宽度并支持响应式布局的容器。.container-fluid 类用于 100% 宽度，占据全部视口（viewport）的容器。 .row 在一行内 .img-responsive 类可以让图片支持响应式布局。其实质是为图片设置了 max-width: 100%;、 height: auto; 和 display: block; 属性，从而让图片在其父元素中更好的缩放。text-center 文本居中text-danger 文字危险颜色text-primary 文本蓝色 btn 按钮，长度与文本长度一样。btn btn-block 你的按钮将会伸展并填满页面整个水平空间，任何在它之下的元素都会跟着浮动至该区块的下一行。btn btn-block btn-default 默认按钮btn btn-block btn-primary 蓝色的块级按钮。btn btn-block btn-info 浅蓝色的块级按钮。btn btn-block btn-danger 按钮危险 fa fa-thumbs-up 字体图标 点赞fa fa-info-circle 字体图标 信息fa fa-trash 字体图标 删除fa fa-paper-plane 字体图标 飞机 提交 form-control 所有设置了 .form-control 类的 &lt;tinput&gt;、&lt;textarea&gt; 和 &lt;select&gt; 元素都将被默认设置宽度属性为 width: 100%; .well well，它的作用是为设定的列创造出一种视觉上的深度感]]></content>
+      <content type="text"><![CDATA[类名.container 类用于固定宽度并支持响应式布局的容器。.container-fluid 类用于 100% 宽度，占据全部视口（viewport）的容器。 .row 在一行内 .img-responsive 类可以让图片支持响应式布局。其实质是为图片设置了 max-width: 100%;、 height: auto; 和 display: block; 属性，从而让图片在其父元素中更好的缩放。text-center 文本居中text-danger 文字危险颜色text-primary 文本蓝色 btn 按钮，长度与文本长度一样。btn btn-block 你的按钮将会伸展并填满页面整个水平空间，任何在它之下的元素都会跟着浮动至该区块的下一行。btn btn-block btn-default 默认按钮btn btn-block btn-primary 蓝色的块级按钮。btn btn-block btn-info 浅蓝色的块级按钮。btn btn-block btn-danger 按钮危险 fa fa-thumbs-up 字体图标 点赞fa fa-info-circle 字体图标 信息fa fa-trash 字体图标 删除fa fa-paper-plane 字体图标 飞机 提交 form-control 所有设置了 .form-control 类的 &lt;tinput&gt;、&lt;textarea&gt; 和 &lt;select&gt; 元素都将被默认设置宽度属性为 width: 100%; 4.0变化已废弃.well well，它的作用是为设定的列创造出一种视觉上的深度感(4.0中已废弃)cite 默认没有-了blockquote padding清除。]]></content>
     </entry>
 
     
