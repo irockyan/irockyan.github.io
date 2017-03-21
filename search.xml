@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[获取客户端的图片]]></title>
+      <url>%2F2017%2F03%2F21%2F%E8%8E%B7%E5%8F%96%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E5%9B%BE%E7%89%87%2F</url>
+      <content type="text"><![CDATA[前言最近总是做移动端的项目，有一个获取本地图片的功能需要实现。 利用input标签上代码 1&lt;input type="file" accept="image/*" capture="camera"&gt; accept接受的是file的文件类型。此段代码可以选取客户端的图片。随后 12345678var camera = document.querySelector('input');var img = document.querySelector('img');camera.addEventListener('change',(e) =&gt; &#123; var file = e.target.files[0]; img.src = URL.createObjectURL(file);&#125;) 可以将文件获取出来并显示。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Animate.css]]></title>
       <url>%2F2017%2F03%2F17%2FAnimate-css%2F</url>
       <content type="text"><![CDATA[介绍是一个CSS3 动画库，它预设了抖动（shake）、闪烁（flash）、弹跳（bounce）、翻转（flip）、旋转（rotateIn/rotateOut）、淡入淡出（fadeIn/fadeOut）等多达 60 多种动画效果，几乎包含了所有常见的动画效果。 常用属性.animated bounce 动画 回弹效果.animated shake 动画 抖动animated fadeOut 淡出animated hinge 悬挂到左侧，然后消失]]></content>
