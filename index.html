@@ -424,11 +424,16 @@
       
         
           
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近总是做移动端的项目，有一个获取本地图片的功能需要实现。</p>
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近总是做移动端的项目，有一个获取本地图片的功能需要实现。<br>本例子要实现的功能：</p>
+<ol>
+<li>本地上传图片到服务器。</li>
+<li>从服务器拉取图片到本地，并且实现滤镜效果。</li>
+<li>iOS与移动端实现效果一致。</li>
+</ol>
 <h2 id="利用input标签"><a href="#利用input标签" class="headerlink" title="利用input标签"></a>利用input标签</h2><p>上代码</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">accept</span>=<span class="string">"image/*"</span> <span class="attr">capture</span>=<span class="string">"camera"</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>accept接受的是file的文件类型。此段代码可以选取客户端的图片。随后</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> camera = <span class="built_in">document</span>.querySelector(<span class="string">'input'</span>);</div><div class="line"><span class="keyword">var</span> img = <span class="built_in">document</span>.querySelector(<span class="string">'img'</span>);</div><div class="line"></div><div class="line">camera.addEventListener(<span class="string">'change'</span>,(e) =&gt; &#123;</div><div class="line">    <span class="keyword">var</span> file = e.target.files[<span class="number">0</span>];</div><div class="line"></div><div class="line">    img.src = URL.createObjectURL(file);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> camera = <span class="built_in">document</span>.querySelector(<span class="string">'input'</span>);</div><div class="line"><span class="keyword">var</span> img = <span class="built_in">document</span>.querySelector(<span class="string">'img'</span>);</div><div class="line"></div><div class="line">camera.addEventListener(<span class="string">'change'</span>,(e) =&gt; &#123;</div><div class="line">    <span class="keyword">var</span> file = e.target.files[<span class="number">0</span>];</div><div class="line">    img.src = URL.createObjectURL(file);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 <p>可以将文件获取出来并显示。</p>
 
           

@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[获取客户端的图片]]></title>
       <url>%2F2017%2F03%2F21%2F%E8%8E%B7%E5%8F%96%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E5%9B%BE%E7%89%87%2F</url>
-      <content type="text"><![CDATA[前言最近总是做移动端的项目，有一个获取本地图片的功能需要实现。 利用input标签上代码 1&lt;input type="file" accept="image/*" capture="camera"&gt; accept接受的是file的文件类型。此段代码可以选取客户端的图片。随后 12345678var camera = document.querySelector('input');var img = document.querySelector('img');camera.addEventListener('change',(e) =&gt; &#123; var file = e.target.files[0]; img.src = URL.createObjectURL(file);&#125;) 可以将文件获取出来并显示。]]></content>
+      <content type="text"><![CDATA[前言最近总是做移动端的项目，有一个获取本地图片的功能需要实现。本例子要实现的功能： 本地上传图片到服务器。 从服务器拉取图片到本地，并且实现滤镜效果。 iOS与移动端实现效果一致。 利用input标签上代码 1&lt;input type="file" accept="image/*" capture="camera"&gt; accept接受的是file的文件类型。此段代码可以选取客户端的图片。随后 1234567var camera = document.querySelector('input');var img = document.querySelector('img');camera.addEventListener('change',(e) =&gt; &#123; var file = e.target.files[0]; img.src = URL.createObjectURL(file);&#125;) 可以将文件获取出来并显示。]]></content>
     </entry>
 
     
@@ -75,7 +75,7 @@
     <entry>
       <title><![CDATA[影响web应用程序页面加载速度的因素]]></title>
       <url>%2F2017%2F03%2F02%2F%E5%BD%B1%E5%93%8Dweb%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E7%9A%84%E5%9B%A0%E7%B4%A0%2F</url>
-      <content type="text"><![CDATA[后端处理（Backend）网站服务器需要花时间从数据库载入数据并生成网页。 网络延迟（Network latency）每个请求需要花时间从客户端抵达服务器并再次返回客户端（请求延迟）。考虑到完整加载一个网站平均需要发出超过100个请求，延迟问题变得更严峻了。 前端处理（Frontend）前端设备渲染网页也需要时间。]]></content>
+      <content type="text"><![CDATA[后端处理（Backend）网站服务器需要花时间从数据库载入数据并生成网页。 网络延迟（Network latency）每个请求需要花时间从客户端抵达服务器并再次返回客户端（请求延迟）。考虑到完整加载一个网站平均需要发出超过100个请求，延迟问题变得更严峻了。 前端处理（Frontend）前端设备渲染网页也需要时间。 在页面中指定预取域名：&lt;link rel=”dns-prefetch” href=”http://this-is-a.com”&amp;gt;]]></content>
     </entry>
 
     
