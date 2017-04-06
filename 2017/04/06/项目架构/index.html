@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="包管理工具," />
+  <meta name="keywords" content="架构," />
 
 
 
@@ -87,28 +87,34 @@
 
 
 
-<meta name="description" content="前言本文主要知识来自于文蔺
-npm算是前端开发中最常用的一个工具了，掌握一些技巧对于提高编程效率增加幸福感至关重要。
-打开npm包的官网在开发中并不是都对每一个包都了如指掌，所以需要经常要去官网看文档npm home $package比如npm home react
-打开此包的GitHub地址和上边一个命令差不太多npm repo $package
-检查依赖中的过时项npm outdated这个对">
+<meta name="description" content="历程
+现在对于项目的架构的理解最好的表现应该在于目录的结构。
+
+架构
+普通架构
+
+对于小项目来说非常合适，但是对于大项目和代码的模块化来说并不是很好">
 <meta property="og:type" content="article">
-<meta property="og:title" content="npm使用技巧">
-<meta property="og:url" content="http://yoursite.com/2016/09/08/npm使用技巧/index.html">
+<meta property="og:title" content="项目架构">
+<meta property="og:url" content="http://yoursite.com/2017/04/06/项目架构/index.html">
 <meta property="og:site_name" content="小世界">
-<meta property="og:description" content="前言本文主要知识来自于文蔺
-npm算是前端开发中最常用的一个工具了，掌握一些技巧对于提高编程效率增加幸福感至关重要。
-打开npm包的官网在开发中并不是都对每一个包都了如指掌，所以需要经常要去官网看文档npm home $package比如npm home react
-打开此包的GitHub地址和上边一个命令差不太多npm repo $package
-检查依赖中的过时项npm outdated这个对">
-<meta property="og:updated_time" content="2017-02-17T02:59:08.000Z">
+<meta property="og:description" content="历程
+现在对于项目的架构的理解最好的表现应该在于目录的结构。
+
+架构
+普通架构
+
+对于小项目来说非常合适，但是对于大项目和代码的模块化来说并不是很好">
+<meta property="og:updated_time" content="2017-04-06T05:11:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="npm使用技巧">
-<meta name="twitter:description" content="前言本文主要知识来自于文蔺
-npm算是前端开发中最常用的一个工具了，掌握一些技巧对于提高编程效率增加幸福感至关重要。
-打开npm包的官网在开发中并不是都对每一个包都了如指掌，所以需要经常要去官网看文档npm home $package比如npm home react
-打开此包的GitHub地址和上边一个命令差不太多npm repo $package
-检查依赖中的过时项npm outdated这个对">
+<meta name="twitter:title" content="项目架构">
+<meta name="twitter:description" content="历程
+现在对于项目的架构的理解最好的表现应该在于目录的结构。
+
+架构
+普通架构
+
+对于小项目来说非常合适，但是对于大项目和代码的模块化来说并不是很好">
 
 
 
@@ -136,13 +142,13 @@ npm算是前端开发中最常用的一个工具了，掌握一些技巧对于�
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/09/08/npm使用技巧/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/06/项目架构/"/>
 
 
 
 
 
-  <title> npm使用技巧 | 小世界 </title>
+  <title> 项目架构 | 小世界 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -312,7 +318,7 @@ npm算是前端开发中最常用的一个工具了，掌握一些技巧对于�
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/09/08/npm使用技巧/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/06/项目架构/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Zyan">
@@ -336,7 +342,7 @@ npm算是前端开发中最常用的一个工具了，掌握一些技巧对于�
             
             
               
-                npm使用技巧
+                项目架构
               
             
           </h1>
@@ -351,8 +357,8 @@ npm算是前端开发中最常用的一个工具了，掌握一些技巧对于�
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-09-08T10:48:48+08:00">
-                2016-09-08
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-06T12:25:34+08:00">
+                2017-04-06
               </time>
             
 
@@ -367,8 +373,8 @@ npm算是前端开发中最常用的一个工具了，掌握一些技巧对于�
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-02-17T10:59:08+08:00">
-                2017-02-17
+              <time title="更新于" itemprop="dateModified" datetime="2017-04-06T13:11:52+08:00">
+                2017-04-06
               </time>
             
           </span>
@@ -404,7 +410,7 @@ npm算是前端开发中最常用的一个工具了，掌握一些技巧对于�
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a class="cloud-tie-join-count" href="/2016/09/08/npm使用技巧/#comments" itemprop="discussionUrl">
+                <a class="cloud-tie-join-count" href="/2017/04/06/项目架构/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count join-count" itemprop="commentCount"></span>
                 </a>
               </span>
@@ -413,7 +419,7 @@ npm算是前端开发中最常用的一个工具了，掌握一些技巧对于�
 
           
           
-             <span id="/2016/09/08/npm使用技巧/" class="leancloud_visitors" data-flag-title="npm使用技巧">
+             <span id="/2017/04/06/项目架构/" class="leancloud_visitors" data-flag-title="项目架构">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -442,17 +448,14 @@ npm算是前端开发中最常用的一个工具了，掌握一些技巧对于�
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文主要知识来自于<a href="http://www.wemlion.com/2016/eleven-npm-tricks-that-will-knock-your-wombat-socks-off/" target="_blank" rel="external">文蔺</a></p>
-<p>npm算是前端开发中最常用的一个工具了，掌握一些技巧对于提高编程效率增加幸福感至关重要。</p>
-<h2 id="打开npm包的官网"><a href="#打开npm包的官网" class="headerlink" title="打开npm包的官网"></a>打开npm包的官网</h2><p>在开发中并不是都对每一个包都了如指掌，所以需要经常要去官网看文档<br><code>npm home $package</code><br>比如<code>npm home react</code></p>
-<h2 id="打开此包的GitHub地址"><a href="#打开此包的GitHub地址" class="headerlink" title="打开此包的GitHub地址"></a>打开此包的GitHub地址</h2><p>和上边一个命令差不太多<br><code>npm repo $package</code></p>
-<h2 id="检查依赖中的过时项"><a href="#检查依赖中的过时项" class="headerlink" title="检查依赖中的过时项"></a>检查依赖中的过时项</h2><p><code>npm outdated</code><br>这个对于我这种升级强迫症来说简直是完美。但是升级需谨慎。</p>
-<h2 id="删除无用的依赖项"><a href="#删除无用的依赖项" class="headerlink" title="删除无用的依赖项"></a>删除无用的依赖项</h2><p><code>npm prune</code><br>此命令可以删除node-modules中不在依赖列表中的项，对于实验某些依赖的作用或者删除年少轻狂时犯下的错有很大的作用。</p>
-<hr>
-<p><strong>下边是一些常用配置</strong></p>
-<h2 id="创建package-json文件"><a href="#创建package-json文件" class="headerlink" title="创建package.json文件"></a>创建package.json文件</h2><p><code>npm init</code><br><code>npm init -y</code><br>两者区别自行尝试</p>
-<h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><p><code>npm install --save react</code><br>安装生产环境依赖<br><code>npm install --save-dev webpack</code><br>开发环境依赖<br><code>npm install -g</code><br>全局安装<br>tips:install可以简写为i</p>
-<h2 id="npm脚本既是shell脚本。"><a href="#npm脚本既是shell脚本。" class="headerlink" title="npm脚本既是shell脚本。"></a>npm脚本既是shell脚本。</h2>
+        <h1 id="历程"><a href="#历程" class="headerlink" title="历程"></a>历程</h1><ol>
+<li>现在对于项目的架构的理解最好的表现应该在于目录的结构。</li>
+</ol>
+<h2 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h2><ol>
+<li>普通架构</li>
+</ol>
+<p>对于小项目来说非常合适，但是对于大项目和代码的模块化来说并不是很好</p>
+
       
     </div>
 
@@ -475,7 +478,7 @@ npm算是前端开发中最常用的一个工具了，掌握一些技巧对于�
       
         <div class="post-tags">
           
-            <a href="/tags/包管理工具/" rel="tag"># 包管理工具</a>
+            <a href="/tags/架构/" rel="tag"># 架构</a>
           
         </div>
       
@@ -488,8 +491,8 @@ npm算是前端开发中最常用的一个工具了，掌握一些技巧对于�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/06/常见网络安全名词介绍/" rel="next" title="常见网络安全名词介绍">
-                <i class="fa fa-chevron-left"></i> 常见网络安全名词介绍
+              <a href="/2017/03/30/2017-03-30/" rel="next" title="2017-03-30">
+                <i class="fa fa-chevron-left"></i> 2017-03-30
               </a>
             
           </div>
@@ -497,10 +500,6 @@ npm算是前端开发中最常用的一个工具了，掌握一些技巧对于�
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/09/09/vscode使用指南/" rel="prev" title="vscode使用指南">
-                vscode使用指南 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -625,7 +624,7 @@ npm算是前端开发中最常用的一个工具了，掌握一些技巧对于�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打开npm包的官网"><span class="nav-number">2.</span> <span class="nav-text">打开npm包的官网</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打开此包的GitHub地址"><span class="nav-number">3.</span> <span class="nav-text">打开此包的GitHub地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#检查依赖中的过时项"><span class="nav-number">4.</span> <span class="nav-text">检查依赖中的过时项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除无用的依赖项"><span class="nav-number">5.</span> <span class="nav-text">删除无用的依赖项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建package-json文件"><span class="nav-number">6.</span> <span class="nav-text">创建package.json文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装依赖"><span class="nav-number">7.</span> <span class="nav-text">安装依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#npm脚本既是shell脚本。"><span class="nav-number">8.</span> <span class="nav-text">npm脚本既是shell脚本。</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#历程"><span class="nav-number">1.</span> <span class="nav-text">历程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#架构"><span class="nav-number">1.1.</span> <span class="nav-text">架构</span></a></li></ol></li></ol></div>
             
 
           </div>
