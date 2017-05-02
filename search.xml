@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[npm使用技巧]]></title>
       <url>%2F20170410npm%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%2F</url>
-      <content type="text"><![CDATA[前言本文主要知识来自于文蔺 npm算是前端开发中最常用的一个工具了，掌握一些技巧对于提高编程效率增加幸福感至关重要。 打开npm包的官网在开发中并不是都对每一个包都了如指掌，所以需要经常要去官网看文档npm home $package比如npm home react 打开此包的GitHub地址和上边一个命令差不太多npm repo $package 检查依赖中的过时项npm outdated这个对于我这种升级强迫症来说简直是完美。但是升级需谨慎。如图中，红色的表示可以直接升级的，黄色的表示需要查看一下更新变化以决定是否升级的。 删除无用的依赖项npm prune此命令可以删除node-modules中不在依赖列表中的项，对于实验某些依赖的作用或者删除年少轻狂时犯下的错有很大的作用。 下边是一些常用配置 创建package.json文件npm initnpm init -y两者区别自行尝试 安装依赖npm install --save react安装生产环境依赖(npm i -S)npm install --save-dev webpack开发环境依赖(npm i -D)npm install -g全局安装 卸载依赖npm uninstall || npm un npm脚本既是shell脚本。]]></content>
+      <content type="text"><![CDATA[前言本文主要知识来自于文蔺 npm算是前端开发中最常用的一个工具了，掌握一些技巧对于提高编程效率增加幸福感至关重要。 打开npm包的官网在开发中并不是都对每一个包都了如指掌，所以需要经常要去官网看文档npm home $package比如npm home react 打开此包的GitHub地址和上边一个命令差不太多npm repo $package 检查依赖中的过时项npm outdated这个对于我这种升级强迫症来说简直是完美。但是升级需谨慎。如图中，红色的表示可以直接升级的，黄色的表示需要查看一下更新变化以决定是否升级的。 删除无用的依赖项npm prune此命令可以删除node-modules中不在依赖列表中的项，对于实验某些依赖的作用或者删除年少轻狂时犯下的错有很大的作用。 下边是一些常用配置 创建package.json文件npm initnpm init -y两者区别自行尝试 安装依赖npm install --save react安装生产环境依赖(npm i -S)npm install --save-dev webpack开发环境依赖(npm i -D)npm install -g全局安装 卸载依赖npm uninstall || npm un 查看包的信息npm info XXX 查看发布过的tagnpm dist-tag ls XXX npm脚本既是shell脚本。]]></content>
     </entry>
 
     
