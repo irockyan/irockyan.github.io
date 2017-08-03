@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="vue," />
+  <meta name="keywords" content="布局," />
 
 
 
@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="前言vue有着近乎同步更新的文档地址。推荐使用官方脚手架搭建项目。本文案例主要讲自己工作的技术栈需要配置的东西。如果依赖被墙，请自行搜索npm淘宝镜像。 依赖插件 sass-loader与node-sass用来处理scss。">
-<meta name="keywords" content="vue">
+<meta name="description" content="本文参考 腾讯ISUX  图片等高响应布局是什么 首先是经常用于图片的布局实现，具体例子可以参见百度图片 其次等高，即所有的图片的高度是大致相同的（后面介绍为啥不是绝对相同），宽度是不同的，并且宽和高等比例 响应式为在不同的屏幕大小下保证宽度和高度的相同  实现过程 图片的来源  在开始之前的准备工作里，我们首先想到的是如何准备充足的图片，并且易于咱们使用，我这里使用的是通过Node.js读取一个">
+<meta name="keywords" content="布局">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue学习记录">
-<meta property="og:url" content="http://yoursite.com/201610232017-02-17-vue学习记录/index.html">
+<meta property="og:title" content="图片等高响应布局的实现">
+<meta property="og:url" content="http://yoursite.com/20170803等高布局的实现/index.html">
 <meta property="og:site_name" content="小世界">
-<meta property="og:description" content="前言vue有着近乎同步更新的文档地址。推荐使用官方脚手架搭建项目。本文案例主要讲自己工作的技术栈需要配置的东西。如果依赖被墙，请自行搜索npm淘宝镜像。 依赖插件 sass-loader与node-sass用来处理scss。">
-<meta property="og:updated_time" content="2017-02-17T07:16:02.000Z">
+<meta property="og:description" content="本文参考 腾讯ISUX  图片等高响应布局是什么 首先是经常用于图片的布局实现，具体例子可以参见百度图片 其次等高，即所有的图片的高度是大致相同的（后面介绍为啥不是绝对相同），宽度是不同的，并且宽和高等比例 响应式为在不同的屏幕大小下保证宽度和高度的相同  实现过程 图片的来源  在开始之前的准备工作里，我们首先想到的是如何准备充足的图片，并且易于咱们使用，我这里使用的是通过Node.js读取一个">
+<meta property="og:updated_time" content="2017-08-03T07:53:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue学习记录">
-<meta name="twitter:description" content="前言vue有着近乎同步更新的文档地址。推荐使用官方脚手架搭建项目。本文案例主要讲自己工作的技术栈需要配置的东西。如果依赖被墙，请自行搜索npm淘宝镜像。 依赖插件 sass-loader与node-sass用来处理scss。">
+<meta name="twitter:title" content="图片等高响应布局的实现">
+<meta name="twitter:description" content="本文参考 腾讯ISUX  图片等高响应布局是什么 首先是经常用于图片的布局实现，具体例子可以参见百度图片 其次等高，即所有的图片的高度是大致相同的（后面介绍为啥不是绝对相同），宽度是不同的，并且宽和高等比例 响应式为在不同的屏幕大小下保证宽度和高度的相同  实现过程 图片的来源  在开始之前的准备工作里，我们首先想到的是如何准备充足的图片，并且易于咱们使用，我这里使用的是通过Node.js读取一个">
 
 
 
@@ -125,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/201610232017-02-17-vue学习记录/"/>
+  <link rel="canonical" href="http://yoursite.com/20170803等高布局的实现/"/>
 
 
 
 
 
-  <title> vue学习记录 | 小世界 </title>
+  <title> 图片等高响应布局的实现 | 小世界 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -301,7 +301,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/201610232017-02-17-vue学习记录/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/20170803等高布局的实现/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Zyan">
@@ -325,7 +325,7 @@
             
             
               
-                vue学习记录
+                图片等高响应布局的实现
               
             
           </h1>
@@ -340,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-23T14:45:26+08:00">
-                2016-10-23
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-03T13:56:24+08:00">
+                2017-08-03
               </time>
             
 
@@ -356,8 +356,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-02-17T15:16:02+08:00">
-                2017-02-17
+              <time title="更新于" itemprop="dateModified" datetime="2017-08-03T15:53:24+08:00">
+                2017-08-03
               </time>
             
           </span>
@@ -393,7 +393,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a class="cloud-tie-join-count" href="/201610232017-02-17-vue学习记录/#comments" itemprop="discussionUrl">
+                <a class="cloud-tie-join-count" href="/20170803等高布局的实现/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count join-count" itemprop="commentCount"></span>
                 </a>
               </span>
@@ -402,7 +402,7 @@
 
           
           
-             <span id="/201610232017-02-17-vue学习记录/" class="leancloud_visitors" data-flag-title="vue学习记录">
+             <span id="/20170803等高布局的实现/" class="leancloud_visitors" data-flag-title="图片等高响应布局的实现">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -431,9 +431,23 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>vue有着近乎同步更新的文档<a href="https://cn.vuejs.org" target="_blank" rel="external">地址</a>。<br>推荐使用官方脚手架搭建项目。<br>本文案例主要讲自己工作的技术栈需要配置的东西。<br>如果依赖被墙，请自行搜索npm淘宝镜像。</p>
-<h2 id="依赖插件"><a href="#依赖插件" class="headerlink" title="依赖插件"></a>依赖插件</h2><ol>
-<li><code>sass-loader</code>与<code>node-sass</code><br>用来处理scss。</li>
+        <h1 id="本文参考"><a href="#本文参考" class="headerlink" title="本文参考"></a>本文参考</h1><ol>
+<li><a href="http://isux.tencent.com/high-equal-response-layout-html.html" target="_blank" rel="external">腾讯ISUX</a></li>
+</ol>
+<h2 id="图片等高响应布局是什么"><a href="#图片等高响应布局是什么" class="headerlink" title="图片等高响应布局是什么"></a>图片等高响应布局是什么</h2><ol>
+<li>首先是经常用于图片的布局实现，具体例子可以参见百度图片</li>
+<li>其次等高，即所有的图片的高度是大致相同的（后面介绍为啥不是绝对相同），宽度是不同的，并且宽和高等比例</li>
+<li>响应式为在不同的屏幕大小下保证宽度和高度的相同</li>
+</ol>
+<h2 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h2><ol>
+<li><p>图片的来源</p>
+<p> 在开始之前的准备工作里，我们首先想到的是如何准备充足的图片，并且易于咱们使用，我这里使用的是通过<code>Node.js</code>读取一个图片列表，然后生成一个包含图片名字的数组。</p>
+</li>
+<li><p>图片的高度问题</p>
+<p> 由于要设置响应式，所以高度在不同情况下不同。宽度见上图中的参考，为（640: 170），（960： 210），（1920: 250）</p>
+</li>
+<li>每行显示几张图片</li>
+<li>每一行的剩余位置如何处理，</li>
 </ol>
 
       
@@ -458,7 +472,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/vue/" rel="tag"># vue</a>
+            <a href="/tags/布局/" rel="tag"># 布局</a>
           
         </div>
       
@@ -471,8 +485,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/201610222017-02-17-16-10-22/" rel="next" title="16.10.22">
-                <i class="fa fa-chevron-left"></i> 16.10.22
+              <a href="/20170410npm使用技巧/" rel="next" title="npm使用技巧">
+                <i class="fa fa-chevron-left"></i> npm使用技巧
               </a>
             
           </div>
@@ -480,10 +494,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/201610252017-02-10-MarkDown的基本使用/" rel="prev" title="markdown的基本使用">
-                markdown的基本使用 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -608,7 +618,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖插件"><span class="nav-number">2.</span> <span class="nav-text">依赖插件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#本文参考"><span class="nav-number">1.</span> <span class="nav-text">本文参考</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#图片等高响应布局是什么"><span class="nav-number">1.1.</span> <span class="nav-text">图片等高响应布局是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现过程"><span class="nav-number">1.2.</span> <span class="nav-text">实现过程</span></a></li></ol></li></ol></div>
             
 
           </div>
