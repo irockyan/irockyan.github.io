@@ -87,18 +87,19 @@
 
 
 
-<meta name="description" content="前言本文主要知识来自于文蔺 npm算是前端开发中最常用的一个工具了，掌握一些技巧对于提高编程效率增加幸福感至关重要。 打开npm包的官网在开发中并不是都对每一个包都了如指掌，所以需要经常要去官网看文档npm home $package比如npm home react 打开此包的GitHub地址和上边一个命令差不太多npm repo $package 检查依赖中的过时项npm outdated这个对">
+<meta name="description" content="前言本文主要知识来自于文蔺 npm算是前端开发中最常用的一个工具了，掌握一些技巧对于提高编程效率增加幸福感至关重要。 打开npm包的官网在开发中并不是都对每一个包都了如指掌，所以需要经常要去官网看文档npm home $package比如npm home react 打开此包的GitHub地址和上边一个命令差不太多npm repo $package 检查依赖中的过时项 npm outdated 这">
 <meta name="keywords" content="包管理工具">
 <meta property="og:type" content="article">
 <meta property="og:title" content="npm使用技巧">
 <meta property="og:url" content="http://yoursite.com/20170410npm使用技巧/index.html">
 <meta property="og:site_name" content="小世界">
-<meta property="og:description" content="前言本文主要知识来自于文蔺 npm算是前端开发中最常用的一个工具了，掌握一些技巧对于提高编程效率增加幸福感至关重要。 打开npm包的官网在开发中并不是都对每一个包都了如指掌，所以需要经常要去官网看文档npm home $package比如npm home react 打开此包的GitHub地址和上边一个命令差不太多npm repo $package 检查依赖中的过时项npm outdated这个对">
+<meta property="og:description" content="前言本文主要知识来自于文蔺 npm算是前端开发中最常用的一个工具了，掌握一些技巧对于提高编程效率增加幸福感至关重要。 打开npm包的官网在开发中并不是都对每一个包都了如指掌，所以需要经常要去官网看文档npm home $package比如npm home react 打开此包的GitHub地址和上边一个命令差不太多npm repo $package 检查依赖中的过时项 npm outdated 这">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/20170410npm使用技巧/1.png/">
-<meta property="og:updated_time" content="2017-04-24T06:27:17.000Z">
+<meta property="og:updated_time" content="2017-08-11T05:14:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="npm使用技巧">
-<meta name="twitter:description" content="前言本文主要知识来自于文蔺 npm算是前端开发中最常用的一个工具了，掌握一些技巧对于提高编程效率增加幸福感至关重要。 打开npm包的官网在开发中并不是都对每一个包都了如指掌，所以需要经常要去官网看文档npm home $package比如npm home react 打开此包的GitHub地址和上边一个命令差不太多npm repo $package 检查依赖中的过时项npm outdated这个对">
+<meta name="twitter:description" content="前言本文主要知识来自于文蔺 npm算是前端开发中最常用的一个工具了，掌握一些技巧对于提高编程效率增加幸福感至关重要。 打开npm包的官网在开发中并不是都对每一个包都了如指掌，所以需要经常要去官网看文档npm home $package比如npm home react 打开此包的GitHub地址和上边一个命令差不太多npm repo $package 检查依赖中的过时项 npm outdated 这">
 <meta name="twitter:image" content="http://yoursite.com/20170410npm使用技巧/1.png/">
 
 
@@ -358,8 +359,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-04-24T14:27:17+08:00">
-                2017-04-24
+              <time title="更新于" itemprop="dateModified" datetime="2017-08-11T13:14:21+08:00">
+                2017-08-11
               </time>
             
           </span>
@@ -437,12 +438,15 @@
 <p>npm算是前端开发中最常用的一个工具了，掌握一些技巧对于提高编程效率增加幸福感至关重要。</p>
 <h2 id="打开npm包的官网"><a href="#打开npm包的官网" class="headerlink" title="打开npm包的官网"></a>打开npm包的官网</h2><p>在开发中并不是都对每一个包都了如指掌，所以需要经常要去官网看文档<br><code>npm home $package</code><br>比如<code>npm home react</code></p>
 <h2 id="打开此包的GitHub地址"><a href="#打开此包的GitHub地址" class="headerlink" title="打开此包的GitHub地址"></a>打开此包的GitHub地址</h2><p>和上边一个命令差不太多<br><code>npm repo $package</code></p>
-<h2 id="检查依赖中的过时项"><a href="#检查依赖中的过时项" class="headerlink" title="检查依赖中的过时项"></a>检查依赖中的过时项</h2><p><code>npm outdated</code><br>这个对于我这种升级强迫症来说简直是完美。但是升级需谨慎。<br><img src="1.png/" alt=""><br>如图中，红色的表示可以直接升级的，黄色的表示需要查看一下更新变化以决定是否升级的。</p>
+<h2 id="检查依赖中的过时项"><a href="#检查依赖中的过时项" class="headerlink" title="检查依赖中的过时项"></a>检查依赖中的过时项</h2><ol>
+<li><code>npm outdated</code><br> 这个对于我这种升级强迫症来说简直是完美。但是升级需谨慎。<br> <img src="1.png/" alt=""><br> 如图中，红色的表示可以直接升级的，黄色的表示需要查看一下更新变化以决定是否升级的。</li>
+<li><a href="https://github.com/dylang/npm-check" target="_blank" rel="external">npm-check</a><br> 这个工具可以检查所有的有新版本的依赖并进行选择性的升级</li>
+</ol>
 <h2 id="删除无用的依赖项"><a href="#删除无用的依赖项" class="headerlink" title="删除无用的依赖项"></a>删除无用的依赖项</h2><p><code>npm prune</code><br>此命令可以删除node-modules中不在依赖列表中的项，对于实验某些依赖的作用或者删除年少轻狂时犯下的错有很大的作用。</p>
 <hr>
 <p><strong>下边是一些常用配置</strong></p>
 <h2 id="创建package-json文件"><a href="#创建package-json文件" class="headerlink" title="创建package.json文件"></a>创建package.json文件</h2><p><code>npm init</code><br><code>npm init -y</code><br>两者区别自行尝试</p>
-<h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><p><code>npm install --save react</code><br>安装生产环境依赖(npm i -S)<br><code>npm install --save-dev webpack</code><br>开发环境依赖(npm i -D)<br><code>npm install -g</code><br>全局安装</p>
+<h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><p><code>npm install react</code><br>安装生产环境依赖(npm i)<br><code>npm install --save-dev webpack</code><br>开发环境依赖(npm i -D)<br><code>npm install -g</code><br>全局安装</p>
 <h2 id="卸载依赖"><a href="#卸载依赖" class="headerlink" title="卸载依赖"></a>卸载依赖</h2><p><code>npm uninstall</code> || <code>npm un</code></p>
 <h2 id="查看包的信息"><a href="#查看包的信息" class="headerlink" title="查看包的信息"></a>查看包的信息</h2><p><code>npm info XXX</code></p>
 <h2 id="查看发布过的tag"><a href="#查看发布过的tag" class="headerlink" title="查看发布过的tag"></a>查看发布过的tag</h2><p><code>npm dist-tag ls XXX</code></p>
@@ -566,7 +570,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">37</span>
+                <span class="site-state-item-count">38</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
