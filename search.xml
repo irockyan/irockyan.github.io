@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[React虚拟DOM理解]]></title>
+    <url>%2F20170822React%E8%99%9A%E6%8B%9FDOM%E7%90%86%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[React虚拟DOM理解本篇文章是我自己对React虚拟DOM的一个理解，主要包含为啥使用虚拟DOM，虚拟DOM是如何保证高效的，传统DOM是如何渲染的等方面，纯个人理解。· 传统的渲染流程浏览器在处理网页的时候，从解析HTML文件开始，大致是构建DOM树-&gt;构建渲染树（解析CSS）-&gt;layout。如果在这个流程中操作了dom的话，则要进行这三步。但是我们在一个复杂网页的构建中必然会大量的操作和修改DOM，这些操作每次都会进行这三步的流程。带来了大量的开销。而React做的就是简化这个流程 虚拟DOMReact毕竟不是浏览器渲染引擎，所以他对我们的DOM操作进行了一个封装，先对所有的DOM操作进行一个整合，然后通知浏览器渲染，那么上个小标题中的三步就只执行了一次，举个不恰当的例子就是火车运货刚开始的时候是来了货就拿个火车运走，后来React来了，他把一天的货攒齐了一次运走，减少了火车的频繁调度。 diff在React中，起始数据的状态是一个树，修改之后的状态是另一个树。那么把整个树都交由浏览器去渲染的话，会有一些浪费，因为毕竟不是整个树都变了。所以通过diff算法，找到不一样的地方交给浏览器去渲染，但是比较这个算法时间复杂度比较高。所以开发人员对开发中的情况进行两个了假设，假设一是在不同级的树中，两个组件相同的可能性比较小。假设二是同级中的组件过多的话可以通过唯一id进行区分。由于假设一，时间复杂度直线下降。而假设二也对比较进行了较大的优化]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>React</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[label标签的文字对齐]]></title>
     <url>%2F20170815label%E6%A0%87%E7%AD%BE%E7%9A%84%E6%96%87%E5%AD%97%E5%AF%B9%E9%BD%90%2F</url>
     <content type="text"><![CDATA[label标签的文字对齐在写表格的时候经常碰到表格的描述文字不相同的情况，要保证各个描述均匀对齐，需要使用HTML实体 关于空格的HTML实体 HTML实体 语义 &amp;emsp; 一个汉字的大小 &amp;ensp; 二分之一个汉字的大小 使用123&lt;label for=""&gt;姓&amp;emsp;&amp;emsp;名&lt;/label&gt;&lt;label for=""&gt;手&amp;ensp;机&amp;ensp;号&lt;/label&gt;&lt;label for=""&gt;电子邮箱&lt;/label&gt;]]></content>
