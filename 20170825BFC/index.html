@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="React," />
+  <meta name="keywords" content="CSS," />
 
 
 
@@ -87,18 +87,18 @@
 
 
 
-<meta name="description" content="前言tag:本文主要知识源自于chemdemo我认为学习一个库，在初识了语法规范之后，接着要学习的就是生命周期了，生命周期方法告诉了我们在哪个阶段该做什么，对整个应用有一个直观的认识，并能清楚的控制。React的生命周期大体上分为：初始化，挂载，更新，卸载四个阶段。下面我们来看一下这四个阶段的详细方法。 初始化阶段。在这个阶段主要有俩个方法。初始化state123456constructor(pr">
-<meta name="keywords" content="React">
+<meta name="description" content="BFCBFC是在我们平时布局中常见的一个概念，首先解释一下什么叫BFC，BFC是一个简写，全称是Block Formatting Context，即块级格式上下文。 BFC是一个独立的渲染区域。它的内部元素的布局与外部毫不相干。 体现 BFC中的上下两个相邻的盒子垂直方向上的margin会发生重叠 浮动和清除浮动只对同一个BFC中的元素起作用。 计算BFC的高度时，浮动元素也参与计算。 BFC区">
+<meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React的生命周期">
-<meta property="og:url" content="http://yoursite.com/201609022017-02-13-React的生命周期/index.html">
+<meta property="og:title" content="BFC">
+<meta property="og:url" content="http://yoursite.com/20170825BFC/index.html">
 <meta property="og:site_name" content="小世界">
-<meta property="og:description" content="前言tag:本文主要知识源自于chemdemo我认为学习一个库，在初识了语法规范之后，接着要学习的就是生命周期了，生命周期方法告诉了我们在哪个阶段该做什么，对整个应用有一个直观的认识，并能清楚的控制。React的生命周期大体上分为：初始化，挂载，更新，卸载四个阶段。下面我们来看一下这四个阶段的详细方法。 初始化阶段。在这个阶段主要有俩个方法。初始化state123456constructor(pr">
+<meta property="og:description" content="BFCBFC是在我们平时布局中常见的一个概念，首先解释一下什么叫BFC，BFC是一个简写，全称是Block Formatting Context，即块级格式上下文。 BFC是一个独立的渲染区域。它的内部元素的布局与外部毫不相干。 体现 BFC中的上下两个相邻的盒子垂直方向上的margin会发生重叠 浮动和清除浮动只对同一个BFC中的元素起作用。 计算BFC的高度时，浮动元素也参与计算。 BFC区">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-02-13T08:56:13.000Z">
+<meta property="og:updated_time" content="2017-08-25T07:58:54.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React的生命周期">
-<meta name="twitter:description" content="前言tag:本文主要知识源自于chemdemo我认为学习一个库，在初识了语法规范之后，接着要学习的就是生命周期了，生命周期方法告诉了我们在哪个阶段该做什么，对整个应用有一个直观的认识，并能清楚的控制。React的生命周期大体上分为：初始化，挂载，更新，卸载四个阶段。下面我们来看一下这四个阶段的详细方法。 初始化阶段。在这个阶段主要有俩个方法。初始化state123456constructor(pr">
+<meta name="twitter:title" content="BFC">
+<meta name="twitter:description" content="BFCBFC是在我们平时布局中常见的一个概念，首先解释一下什么叫BFC，BFC是一个简写，全称是Block Formatting Context，即块级格式上下文。 BFC是一个独立的渲染区域。它的内部元素的布局与外部毫不相干。 体现 BFC中的上下两个相邻的盒子垂直方向上的margin会发生重叠 浮动和清除浮动只对同一个BFC中的元素起作用。 计算BFC的高度时，浮动元素也参与计算。 BFC区">
 
 
 
@@ -126,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/201609022017-02-13-React的生命周期/"/>
+  <link rel="canonical" href="http://yoursite.com/20170825BFC/"/>
 
 
 
 
 
-  <title> React的生命周期 | 小世界 </title>
+  <title> BFC | 小世界 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -302,7 +302,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/201609022017-02-13-React的生命周期/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/20170825BFC/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Zyan">
@@ -326,7 +326,7 @@
             
             
               
-                React的生命周期
+                BFC
               
             
           </h1>
@@ -341,8 +341,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-09-02T15:44:31+08:00">
-                2016-09-02
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T14:19:30+08:00">
+                2017-08-25
               </time>
             
 
@@ -357,8 +357,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-02-13T16:56:13+08:00">
-                2017-02-13
+              <time title="更新于" itemprop="dateModified" datetime="2017-08-25T15:58:54+08:00">
+                2017-08-25
               </time>
             
           </span>
@@ -394,7 +394,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a class="cloud-tie-join-count" href="/201609022017-02-13-React的生命周期/#comments" itemprop="discussionUrl">
+                <a class="cloud-tie-join-count" href="/20170825BFC/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count join-count" itemprop="commentCount"></span>
                 </a>
               </span>
@@ -403,7 +403,7 @@
 
           
           
-             <span id="/201609022017-02-13-React的生命周期/" class="leancloud_visitors" data-flag-title="React的生命周期">
+             <span id="/20170825BFC/" class="leancloud_visitors" data-flag-title="BFC">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -432,20 +432,24 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>tag:本文主要知识源自于<a href="https://github.com/chemdemo/chemdemo.github.io/issues/14" target="_blank" rel="external">chemdemo</a><br>我认为学习一个库，在初识了语法规范之后，接着要学习的就是生命周期了，生命周期方法告诉了我们在哪个阶段该做什么，对整个应用有一个直观的认识，并能清楚的控制。<br>React的生命周期大体上分为：初始化，挂载，更新，卸载四个阶段。<br>下面我们来看一下这四个阶段的详细方法。</p>
-<h2 id="初始化阶段。"><a href="#初始化阶段。" class="headerlink" title="初始化阶段。"></a>初始化阶段。</h2><p>在这个阶段主要有俩个方法。<br>初始化state<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">constructor(props) &#123;</div><div class="line">    super(props)</div><div class="line">    this.state = &#123;</div><div class="line">        name: props.name</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>初始化props<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">class.defaultProps = &#123;</div><div class="line">    name:&apos;Zyan&apos;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>如果属性没有从父组件传入的话可以直接使用此值作为默认<br>examples:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line">import React, &#123;Component, PropTypes&#125; from &apos;react&apos;</div><div class="line">import ReactDom from &apos;react-dom&apos;;</div><div class="line">class Lifecycle extends Component &#123;</div><div class="line">    constructor(props) &#123;</div><div class="line">        super(props)</div><div class="line">        console.log(&apos;initstate&apos;)</div><div class="line">        this.state = &#123;</div><div class="line">            name: props.name</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    componentWillMount() &#123;&#125;</div><div class="line"></div><div class="line">    componentDidMount() &#123;&#125;</div><div class="line"></div><div class="line">    componentWillReceiveProps(nextProps) &#123;&#125;</div><div class="line"></div><div class="line">    componentWillUpdate(nextProps, nextState) &#123;&#125;</div><div class="line"></div><div class="line">    componentDidUpdate(prevProps, prevState) &#123;&#125;</div><div class="line"></div><div class="line">    componentWillUnmount() &#123;&#125;</div><div class="line"></div><div class="line">    click = (event) =&gt; &#123;</div><div class="line">        this.setState(&#123;name: &quot;ni&quot;&#125;)</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    render() &#123;</div><div class="line">        console.log(&apos;render&apos;)</div><div class="line">        return (</div><div class="line">            &lt;div&gt;</div><div class="line">                &#123;this.state.name&#125;</div><div class="line">                &lt;input type=&quot;button&quot; value=&quot;点击&quot; onClick=&#123;this.click&#125;/&gt;</div><div class="line">            &lt;/div&gt;</div><div class="line">        )</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">Lifecycle.propTypes = &#123;</div><div class="line">    name:React.PropTypes.string</div><div class="line">&#125;</div><div class="line">Lifecycle.defaultProps = &#123;</div><div class="line">    name:&apos;Zyan&apos;,</div><div class="line">    conduct:function()&#123;</div><div class="line">        console.log(&apos;initProps&apos;)</div><div class="line">    &#125;()</div><div class="line">&#125;</div><div class="line"></div><div class="line">ReactDom.render(</div><div class="line">    &lt;Lifecycle/&gt;, document.querySelector(&apos;#app&apos;));</div></pre></td></tr></table></figure></p>
-<p>同时我们也可以看到执行顺序为props -&gt; state -&gt; render</p>
-<h2 id="挂载阶段"><a href="#挂载阶段" class="headerlink" title="挂载阶段"></a>挂载阶段</h2><p>此阶段有俩个方法可以使用：<code>componentWillMount()</code> 和<code>componentDidMount()</code></p>
-<p><code>componentWillMount()</code>在刚好初始渲染（initial rendering）发生之前被调用一次，也就是React在DOM插入组件之前。需要注意的是在此处调用this.setState()方法将不会触发重复渲染（re-render）<br><code>componentDidMount()</code>刚好发生在React插入组件到DOM之后，且也只被调用一次。在此方法能够之后DOM树已经构建完成，这意味着这个方法是初始化其他需要访问DOM或操作数据的第三方库的最佳时机。</p>
-<p>此时执行的顺序为：props -&gt; state -&gt; willMount -&gt; render -&gt; didMount</p>
-<h2 id="更新阶段"><a href="#更新阶段" class="headerlink" title="更新阶段"></a>更新阶段</h2><p>当修改组件的props或者state时，组件将会进行更新。<br>修改props时，会以此执行以下方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">componentWillReceiveProps(nextProps) &#123;&#125;</div><div class="line">shouldComponentUpdate(nextProps, nextState) &#123;</div><div class="line">componentWillUpdate(nextProps, nextState) &#123;&#125;</div><div class="line">render()&#123;&#125;</div><div class="line">componentDidUpdate(prevProps, prevState) &#123;&#125;</div></pre></td></tr></table></figure></p>
-<p>当state改变时执行以下方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">shouldComponentUpdate(nextProps, nextState) &#123;</div><div class="line">componentWillUpdate(nextProps, nextState) &#123;&#125;</div><div class="line">render()&#123;&#125;</div><div class="line">componentDidUpdate(prevProps, prevState) &#123;&#125;</div></pre></td></tr></table></figure></p>
-<p>此时组件已经被插入dom中了，所以这些方法不会在首次render时调用。</p>
-<p>shouldComponentUpdate()方法允许我们自行决定下一个state更新时是否触发重复render。<a href="http://www.zyan.site/2016/09/01/React%E4%BC%98%E5%8C%96%E6%8C%87%E5%8D%97/" target="_blank" rel="external">详细优化</a></p>
-<p>此时执行的顺序为：props -&gt; state -&gt; willMount -&gt; render -&gt; didMount -&gt; 更新 -&gt;willupdate -&gt; render -&gt; didUpdate</p>
-<h2 id="卸载阶段"><a href="#卸载阶段" class="headerlink" title="卸载阶段"></a>卸载阶段</h2><p>此阶段只有一个方法<code>componentWillUnmount()</code><br>它将在组件从DOM卸载之前被调用。可以在内部执行任何可能需要的清理工作</p>
+        <h1 id="BFC"><a href="#BFC" class="headerlink" title="BFC"></a>BFC</h1><p>BFC是在我们平时布局中常见的一个概念，首先解释一下什么叫BFC，BFC是一个简写，全称是<code>Block Formatting Context</code>，即块级格式上下文。</p>
+<p>BFC是一个独立的渲染区域。它的内部元素的布局与外部毫不相干。</p>
+<h2 id="体现"><a href="#体现" class="headerlink" title="体现"></a>体现</h2><ol>
+<li><code>BFC</code>中的上下两个相邻的盒子垂直方向上的<code>margin</code>会发生重叠</li>
+<li>浮动和清除浮动只对同一个BFC中的元素起作用。</li>
+<li>计算BFC的高度时，浮动元素也参与计算。</li>
+<li>BFC区域不会与浮动盒子重叠</li>
+</ol>
+<h2 id="如何触发BFC"><a href="#如何触发BFC" class="headerlink" title="如何触发BFC"></a>如何触发<code>BFC</code></h2><ol>
+<li>设置float属性。</li>
+<li>设置<code>absolute</code>和<code>fixed</code></li>
+<li>设置<code>display</code>的<code>inline-block</code>和<code>table-cell</code>和<code>table-caption</code>和<code>flex</code>和<code>inline-flex</code></li>
+<li>设置<code>overflow</code>为<code>hidden</code>或者<code>scroll</code>或者<code>auto</code></li>
+</ol>
+<h2 id="BFC具体用处"><a href="#BFC具体用处" class="headerlink" title="BFC具体用处"></a>BFC具体用处</h2><ol>
+<li>清除浮动，体现第三条</li>
+<li>多列布局中一个元素位置靠左或者靠右，然后剩下的充满剩下的空间。可以通过BFC占满剩下的区域。</li>
+</ol>
 
       
     </div>
@@ -469,7 +473,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/React/" rel="tag"># React</a>
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
           
         </div>
       
@@ -482,8 +486,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/201609012017-02-13-React优化指南/" rel="next" title="React优化指南">
-                <i class="fa fa-chevron-left"></i> React优化指南
+              <a href="/20170822React虚拟DOM理解/" rel="next" title="React虚拟DOM理解">
+                <i class="fa fa-chevron-left"></i> React虚拟DOM理解
               </a>
             
           </div>
@@ -491,10 +495,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/201609062017-02-14-常见网络安全名词介绍/" rel="prev" title="常见网络安全名词介绍">
-                常见网络安全名词介绍 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -619,7 +619,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化阶段。"><span class="nav-number">2.</span> <span class="nav-text">初始化阶段。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#挂载阶段"><span class="nav-number">3.</span> <span class="nav-text">挂载阶段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更新阶段"><span class="nav-number">4.</span> <span class="nav-text">更新阶段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#卸载阶段"><span class="nav-number">5.</span> <span class="nav-text">卸载阶段</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#BFC"><span class="nav-number">1.</span> <span class="nav-text">BFC</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#体现"><span class="nav-number">1.1.</span> <span class="nav-text">体现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何触发BFC"><span class="nav-number">1.2.</span> <span class="nav-text">如何触发BFC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BFC具体用处"><span class="nav-number">1.3.</span> <span class="nav-text">BFC具体用处</span></a></li></ol></li></ol></div>
             
 
           </div>
